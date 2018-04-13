@@ -1,0 +1,243 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.content {
+  padding: 20px 30px 30px;
+  font-family: Roboto;
+}
+
+.content--links {
+  padding-bottom: 20px;
+  .content__body {
+    flex-wrap: wrap;
+    padding-top: 12px;
+  }
+}
+
+.content--margin-bottom {
+  margin-bottom: 20px;
+}
+
+.content--no-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.content--big-table {
+  padding: 26px 26px 0;
+  .content__buttons {
+    padding: 0 25px;
+  }
+}
+
+.content__buttons {
+  .button {
+    margin-right: 8px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content--form {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 60px;
+}
+
+.content--horizontal {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px;
+}
+
+.content--padding-bottom {
+  padding-bottom: 40px;
+}
+
+.content__header {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.content__header--margin-t {
+  margin-top: 30px;
+}
+
+.content__header--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__header--h80 {
+  min-height: 80px;
+}
+
+.content__footer {
+  margin: 12px 0 36px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.content__title {
+  margin: 0;
+  padding: 0 0 20px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content__title--bold {
+  font-weight: 900;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.content__title--toggle {
+  position: relative;
+  margin-right: 45px;
+  cursor: pointer;
+  @include pseudo-after(100%, 5px);
+  &::after {
+    bottom: 0;
+    left: 0;
+    background-color: #6f7fa7;
+    opacity: 0;
+    transition: 300ms;
+  }
+  &:hover, &[data-active="true"] {
+    color: #6f7fa7;
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+.content__title--no-padding {
+  padding: 0;
+}
+
+.content__body {
+  display: flex;
+  align-items: center;
+}
+
+.content__body--form {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.content__body--text {
+  padding-top: 25px;
+}
+
+.content__body--toggle {
+  padding-top: 20px;
+}
+
+.content__body--column {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.content__accordion {
+  &.active {
+    .content__header {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    }
+    .content__title {
+      color: #6f7fa7;
+    }
+    .content__btn {
+      color: rgba(111, 127, 167, 0.4);
+      background-color: #ffffff;
+      border: 1px solid rgba(111, 127, 167, 0.2);
+    }
+  }
+}
+
+.content__description {
+  font-size: 14px;
+  line-height: 23px;
+  color: rgba(35, 35, 35, 0.6);
+}
+
+.content__img {
+  margin-right: 25px;
+  border-radius: 0 11px 11px 11px;
+}
+
+.content__text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: Roboto;
+  color: rgba(0, 0, 0, 0.4);
+  img {
+    padding: 0 5px 3px 0;
+    vertical-align: middle;
+  }
+}
+
+.content__text--gray {
+  padding-bottom: 7px;
+  font-size: 13px;
+  color: rgba(35, 35, 35, 0.5);
+}
+
+.content__text--dark {
+  padding-bottom: 7px;
+  font-size: 13px;
+  color: rgba(35, 35, 35, 0.8);
+}
+
+.content__link {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 13px;
+  color: rgba(35, 35, 35, 0.6);
+  text-decoration: none;
+  &:hover {
+    div {
+      background-color: rgba(123, 137, 173, 0.1);
+    }
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+}
+
+.content__link--top {
+  img {
+    margin-bottom: 4px;
+  }
+}
+
+.content__item {
+  display: none;
+  flex-grow: 1;
+  &[data-active="true"] {
+    display: block;
+  }
+}
+
+.content__caption {
+  margin: 0 33px 0 0;
+  padding: 0 28px 0 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  opacity: 0.6;
+}

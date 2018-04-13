@@ -1,0 +1,156 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.input, .select {
+  box-sizing: border-box;
+  height: 37px;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 37px;
+  font-family: Roboto;
+  color: rgba(35, 35, 35, 0.5);
+  border: none;
+  border-radius: 19px;
+  outline: none;
+  &::placeholder {
+    font-size: 13px;
+    color: rgba(35, 35, 35, 0.3);
+  }
+}
+
+.input--search {
+  padding-left: 40px;
+  background: #ffffff url("../img/search.png") no-repeat 15px center;
+}
+
+.input--shadow, .select--shadow {
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.06);
+  &:hover, &:focus {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.input--border, .select--border {
+  background-color: transparent;
+  border: 1px solid #e8e8e8;
+}
+
+.input--dark, .select--dark {
+  font-size: 15px;
+  color: rgba(35, 35, 35, 0.9);
+}
+
+.input--file {
+  display: none;
+}
+
+.textarea {
+  box-sizing: border-box;
+  height: 87px;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 19px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+  resize: none;
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.select {
+  padding-right: 40px;
+  background: url("../img/arrow-down--light.png") no-repeat 304px center;
+  appearance: none;
+}
+
+.select--short {
+  background-position: 183px center;
+}
+
+.input--form, .textarea--form, .select--form {
+  &:focus, &:hover {
+    border: 1px solid #b5bfd6;
+  }
+}
+
+.radio {
+  position: relative;
+  margin: 0 0 6px;
+  padding: 0 0 0 44px;
+  cursor: pointer;
+  &:hover {
+    b {
+      color: rgba(35, 35, 35, 0.8);
+      &::before {
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  input {
+    display: none;
+    &:checked + b {
+      &::before {
+        background-color: #9ca76f;
+        border-color: #9ca76f;
+      }
+    }
+  }
+  b {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(35, 35, 35, 0.6);
+    transition: 300ms;
+    @include pseudo-before(21px, 21px);
+    &::before {
+      top: 0;
+      left: 12px;
+      background-color: white;
+      border: 1px solid #c6c6c6;
+      border-radius: 11px;
+      transition: 300ms;
+    }
+  }
+}
+
+.checkbox {
+  position: relative;
+  margin: 0 0 6px;
+  padding: 3px 0 4px 44px;
+  cursor: pointer;
+  &:hover {
+    b {
+      color: rgba(35, 35, 35, 0.8);
+      &::before {
+        border-color: rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  input {
+    display: none;
+    &:checked + b {
+      &::before {
+        background-color: #9ca76f;
+        border-color: #9ca76f;
+      }
+    }
+  }
+  b {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(35, 35, 35, 0.6);
+    transition: 300ms;
+    @include pseudo-before(21px, 21px);
+    &::before {
+      top: 1px;
+      left: 12px;
+      background-color: white;
+      border: 1px solid #c6c6c6;
+      border-radius: 6px;
+      transition: 300ms;
+    }
+  }
+}

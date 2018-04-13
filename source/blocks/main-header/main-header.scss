@@ -1,0 +1,25 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.main-header {
+  display: flex;
+  align-items: center;
+  min-height: 84px;
+  background: #ffffff;
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 183px;
+  margin-right: 45px;
+}
+
+.main-header__input {
+  width: 400px;
+}
+
+.main-header__user {
+  margin-left: auto;
+}

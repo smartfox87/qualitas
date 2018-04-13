@@ -1,0 +1,110 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.button {
+  padding: 12px 23px;
+  font-size: 13px;
+  line-height: 13px;
+  font-family: Roboto;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  background-color: #7b89ad;
+  border: none;
+  border-radius: 19px;
+  outline: none;
+  cursor: pointer;
+  transition: 300ms;
+  &:hover {
+    background-color: #606f94;
+  }
+}
+
+.button--icon {
+  padding-left: 45px;
+  background: #7b89ad url("../img/plus.png") no-repeat 17px center;
+}
+
+.button--icon-del {
+  background-image: url("../img/delete.png");
+}
+
+.button--icon-back {
+  padding-left: 40px;
+  background-image: url("../img/arrow-left-white.png");
+}
+
+.button--light {
+  color: rgba(111, 117, 130, 0.7);
+  background-color: #e6e9f0;
+  &:hover {
+    color: rgba(111, 117, 130, 0.9);
+    background-color: #e6e9f0;
+  }
+}
+
+.button--white {
+  color: rgba(0, 0, 0, 0.4);
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.button--green {
+  background-color: rgba(137, 150, 110, 0.8);
+  &:hover {
+    background-color: rgba(137, 150, 110, 1);
+  }
+}
+
+.button--red-fill {
+  background-color: #c69078;
+  &:hover {
+    background-color: rgba(239, 134, 114, 1);
+  }
+}
+
+.button--middle {
+  padding: 8px 15px;
+}
+
+.button--min {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px 9px;
+  font-size: 11px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-transform: none;
+  text-decoration: none;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  &:hover {
+    color: #7b89ad;
+    background: none;
+    border-color: rgba(96, 111, 148, 0.4);
+  }
+}
+
+.button--table {
+  padding: 6px 16px;
+  color: #a4b483;
+  border: 2px solid rgba(232, 232, 232, 0.6);
+  border-radius: 15px;
+  &:hover {
+    color: #ffffff;
+    background-color: #a6ba7d;
+    border: 2px solid #a6ba7d;
+  }
+}
+
+.button--red {
+  &:hover {
+    background-color: rgba(239, 134, 114, 1);
+    border: 2px solid rgba(239, 134, 114, 1);
+  }
+}

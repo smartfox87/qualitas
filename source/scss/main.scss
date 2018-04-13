@@ -1,0 +1,124 @@
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto"),
+  url("../fonts/roboto_regular.woff2") format("woff2"),
+  url("../fonts/roboto_regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local("Roboto"),
+  url("../fonts/roboto_bold.woff2") format("woff2"),
+  url("../fonts/roboto_bold.woff") format("woff");
+}
+
+html {
+  display: none;
+  background: #d5d5d5 url("../img/bg__page.jpg") no-repeat center / cover;
+  font-family: Roboto sans-serif;
+  background-attachment: fixed;
+}
+
+.main-body__wrapper {
+  margin: 40px auto 220px;
+  overflow: hidden;
+  width: 1400px;
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 5px 21px rgba(0, 0, 0, 0.16);
+}
+
+.main-body__main {
+  display: flex;
+}
+
+.main-body__content {
+  padding: 32px 33px 60px 28px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+
+.block-shadow {
+  border-radius: 10px;
+  box-shadow: 0 12px 29px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  margin: $grid-margin;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.grid-item--4 {
+  width: $grid-4;
+  margin-bottom: 3.7%;
+}
+
+.grid-item--2 {
+  width: $grid-2;
+}
+
+.grid-item--1 {
+  width: $grid-1;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.border-b-dark {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+}
+.border-b-green {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.mark-color {
+  display: inline-block;
+  position: relative;
+  margin-left: 30px;
+  padding-left: 25px;
+  height: 14px;
+  line-height: 14px;
+  @include pseudo-before(14px, 14px);
+  &::before {
+    border-radius: 7px;
+    left: 0;
+    top: 0;
+  }
+}
+
+.mark-color--blue {
+  &::before {
+    opacity: 0.4;
+    background-color: #4758a5;
+  }
+}
+
+.mark-color--green {
+  &::before {
+    opacity: 0.6;
+    background-color: #c5c646;
+  }
+}
+
+.mark-color--red {
+  &::before {
+    opacity: 0.5;
+    background-color: #f24841;
+  }
+}

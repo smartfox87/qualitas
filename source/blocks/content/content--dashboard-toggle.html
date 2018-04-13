@@ -1,0 +1,16 @@
+<div class="content  block-shadow  js-content-toggle">
+  <div class="content__header">
+    <h3 class="content__title  content__title--toggle  js-content-toggle-link" data-active="true">
+      View Action Assigned</h3>
+    <h3 class="content__title  content__title--toggle  js-content-toggle-link">
+      View Approval Notifications</h3>
+  </div>
+  <div class="content__body  content__body--toggle">
+    <div class="content__item  js-content-toggle-item" data-active="true">
+      @@include("../table/table--dashboard-action-assigned.html")
+    </div>
+    <div class="content__item  js-content-toggle-item">
+      @@include("../table/table--dashboard-approval-notifications.html")
+    </div>
+  </div>
+</div>

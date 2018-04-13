@@ -1,0 +1,65 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.popup {
+  top: 170px;
+  z-index: 2100;
+  display: none;
+  box-sizing: border-box;
+  width: 695px;
+  padding: 10px 35px 30px 30px;
+  font-family: Roboto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 12px 29px rgba(0, 0, 0, 0.05);
+  @include center-x(fixed);
+  &.active + .popup__overlay {
+    display: block;
+  }
+}
+
+.popup--form {
+  width: 605px;
+  padding-right: 30px;
+}
+
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  background-color: #000000;
+  opacity: 0.3;
+}
+
+.popup__header {
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.popup__header--border {
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.popup__title {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.popup__close {
+  @include modal-close(14px, 14px, 18px, 1px, #000000);
+  top: 13px;
+  right: 13px;
+  cursor: pointer;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+  }
+}

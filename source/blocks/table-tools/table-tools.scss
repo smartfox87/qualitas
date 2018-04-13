@@ -1,0 +1,56 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.table-tools {
+  display: flex;
+  width: 100%;
+  margin-bottom: 17px;
+  font-family: Roboto;
+}
+
+.table-tools__select {
+  margin-right: auto;
+  font-size: 13px;
+  color: rgba(35, 35, 35, 0.3);
+  &:hover {
+    select {
+      color: rgba(35, 35, 35, 0.5);
+      background-image: url("../img/arrow-down--min.png");
+    }
+  }
+  select {
+    box-sizing: border-box;
+    width: 65px;
+    height: 37px;
+    padding-right: 32px;
+    text-align: right;
+    direction: rtl;
+    color: rgba(35, 35, 35, 0.3);
+    background: url("../img/arrow-down--min-light.png") no-repeat 40px center;
+    border: 1px solid #e8e8e8;
+    border-radius: 19px;
+    outline: none;
+    cursor: pointer;
+    transition: 300ms;
+    appearance: none;
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+  span {
+    padding-left: 10px;
+  }
+}
+
+.table-tools__search {
+  width: 365px;
+  margin-right: 20px;
+}
+
+.table-tools__buttons {
+  margin-left: auto;
+}
+
+.table-tools__btn {
+  margin-left: 11px;
+}

@@ -1,0 +1,62 @@
+<form class="form">
+  <label class="form__label">
+    <span>Name</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Description</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
+  <label class="form__label">
+    <span>Priority</span>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
+      <option></option>
+      <option>First</option>
+      <option>Second</option>
+    </select>
+  </label>
+  <label class="form__label">
+    <select class="select  select--border  select--form  select--shadow  select--short  select--dark  form__select--short">
+      <option>Select Category</option>
+      <option>Support</option>
+      <option>Report</option>
+    </select>
+  </label>
+  <label class="form__label  form__label--file">
+    <span>File</span>
+    <div class="js-parent-file">
+      <button class="button  button--light  js-button-file">Select file</button>
+      <input class="input  input--file  js-input-file" type="file">
+    </div>
+  </label>
+  <label class="form__label">
+    <span>Declaration</span>
+    <label class="form__checkbox  checkbox">
+      <input type="checkbox">
+      <b>I declare that the information provided in this form is true and accurate and fully supports
+        the appeal</b>
+    </label>
+  </label>
+  <div class="form__label">
+    <span>Have you attached any supporting evidence?
+      <br>(please tick)</span>
+    <div class="form__radio-box">
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>Yes</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>No</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>N/A</b>
+      </label>
+    </div>
+  </div>
+  <div class="form__buttons">
+    <button class="button  form__btn" type="submit">Submit</button>
+    <button class="button  button--white  form__btn  js-close-popup" type="button">Cancel</button>
+  </div>
+</form>
