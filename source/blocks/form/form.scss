@@ -43,6 +43,26 @@
   }
 }
 
+.form--big-text {
+  .form__label {
+    span {
+      width: 520px;
+    }
+  }
+  .form__input, .form__textarea, .form__select {
+    width: 455px;
+  }
+  .form__textarea {
+    height: 100px;
+  }
+  .form__buttons {
+    padding-left: 480px;
+  }
+  .form__select {
+    background-position: 420px center;
+  }
+}
+
 .form--big {
   .form__label {
     span {
@@ -159,6 +179,7 @@
 .form__select--short {
   width: 215px;
 }
+
 .form__select--min {
   width: 113px;
   background-position: 82px center;

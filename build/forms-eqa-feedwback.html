@@ -75,7 +75,7 @@
         </ul>
       </div>
     </li>
-    <li class="main-nav__item  js-accordion-item  active">
+    <li class="main-nav__item  js-accordion-item">
       <div class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__centre.png" alt="My Centre">
@@ -87,7 +87,7 @@
           <li><a href="centre-management-report.html">Manage EQA Reports</a></li>
           <li><a href="centre-request-bug-list.html">Report A Bug</a></li>
           <li><a href="centre-manage-staff-activities.html">Staff Area</a></li>
-          <li><a class="active" href="centre-request-support-visit.html">Request Support Visit</a></li>
+          <li><a href="centre-request-support-visit.html">Request Support Visit</a></li>
         </ul>
       </div>
     </li>
@@ -107,7 +107,7 @@
         <span>Focus Awards Resources</span>
       </a>
     </li>
-    <li class="main-nav__item  js-accordion-item">
+    <li class="main-nav__item  js-accordion-item  active">
       <div class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__forms.png" alt="Forms">
@@ -118,7 +118,7 @@
         <ul>
           <li><a href="forms-additional-qualifications.html">Additional Qualifications</a></li>
           <li><a href="forms-appleas.html">Appeals</a></li>
-          <li><a href="forms-eqa-feedwback.html">EQA Feedback</a></li>
+          <li><a class="active" href="forms-eqa-feedwback.html">EQA Feedback</a></li>
           <li><a href="forms-complaints.html">Complaints</a></li>
           <li><a href="forms-reasonable-adjustments.html">Reasonable Adjustments</a></li>
           <li><a href="#">Replacement Certificate</a></li>
@@ -132,57 +132,98 @@
 </nav>
 
         <div class="main-body__content">
-          <div class="breadcrumbs">
+          <div class="breadcrumbs  breadcrumbs--vertical">
   <div class="breadcrumbs__wrapper">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
         <a href="index.html" title="Home page">Home page</a>
       </li>
     </ul>
-    <h1 class="breadcrumbs__title">Request Support Visit</h1>
+    <h1 class="breadcrumbs__title">Centre feedback following an EQA visit</h1>
+  </div>
+  <div class="breadcrumbs__text">
+    This formenables you to provide feedback to Focus Awards both in relation to the monitoring activity, our overall
+    arrangements, qualifications and services.
   </div>
 </div>
 
           <div class="grid-container">
-            <div class="grid-item  grid-item--4  js-popup-parent">
-              <div class="content  content--form  block-shadow">
-  <form class="form  form--mid">
+            <div class="grid-item  grid-item--4">
+              <div class="content  content--big-table  block-shadow  content--padding-bottom">
+  <div class="content__header">
+    <h3 class="content__title">Part 1</h3>
+  </div>
+  <div class="content__body  content__body--form">
+    <form class="form  form--big-text">
   <label class="form__label">
-    <span>Contact Name</span>
+    <span>Centre Name</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <label class="form__label">
-    <span>Contact Email</span>
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="email">
-  </label>
-  <label class="form__label">
-    <span>Contact Number</span>
+    <span>Your Name</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
-  <label class="form__label">
-    <span>Qualification</span>
+  <label class="form__label  form__label--margin-b">
+    <span>Date Of Visit</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
-  <label class="form__label">
-    <span>Type of Visit</span>
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
-      <option></option>
-      <option>Support</option>
-      <option>Report</option>
-    </select>
-  </label>
-  <label class="form__label">
-    <span>Reason For The Request</span>
+  <div class="form__label  form__label--margin-b">
+    <span>Do you agree the EQA report is an accurate reflection of the monitoring activity and findings?</span>
+    <div class="form__radio-box">
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>Yes</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>No</b>
+      </label>
+    </div>
+  </div>
+  <label class="form__label  form__label--margin-b">
+    <span>If you have stated no, please expand and tell us why you do not agree with the EQA’s decision. Alternatively,
+      if you have answered yes, please feel free to make any general comments regarding the overall outcome of your visit.</span>
     <textarea class="textarea  textarea--form  form__textarea"></textarea>
   </label>
-  <label class="form__label">
-    <span>Additional Comments</span>
+  <div class="form__label  form__label--margin-b">
+    <span>Do you agree the EQA report is an accurate reflection of the monitoring activity and findings?</span>
+    <div class="form__radio-box">
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio-2">
+        <b>Very satisfied</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio-2">
+        <b>Satisfied</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio-2">
+        <b>Not satisfied</b>
+      </label>
+    </div>
+  </div>
+  <label class="form__label  form__label--margin-b">
+    <span>If appropriate, do you have views on whether the assessment arrangements for the qualification(s) covered by
+      this engagement were fit for purpose and/or enable your centre to deliver the qualification efficiently and effectively?</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
+  <label class="form__label  form__label--margin-b">
+    <span>Do you have any views on the qualification(s) covered by this engagement that you wish to feedback to us
+      (e.g. the relevance of the qualification to sector needs, progression opportunities, or the appropriateness of
+      the qualification specification)?</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
+  <label class="form__label  form__label--margin-b">
+    <span>If appropriate, any other comments/feedback you wish to make about the visit and/or Focus Awards and the
+      services and qualifications we provide.</span>
     <textarea class="textarea  textarea--form  form__textarea"></textarea>
   </label>
   <div class="form__buttons">
     <button class="button  form__btn" type="submit">Submit</button>
   </div>
 </form>
+
+  </div>
 </div>
 
             </div>

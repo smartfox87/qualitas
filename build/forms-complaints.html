@@ -75,7 +75,7 @@
         </ul>
       </div>
     </li>
-    <li class="main-nav__item  js-accordion-item  active">
+    <li class="main-nav__item  js-accordion-item">
       <div class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__centre.png" alt="My Centre">
@@ -87,7 +87,7 @@
           <li><a href="centre-management-report.html">Manage EQA Reports</a></li>
           <li><a href="centre-request-bug-list.html">Report A Bug</a></li>
           <li><a href="centre-manage-staff-activities.html">Staff Area</a></li>
-          <li><a class="active" href="centre-request-support-visit.html">Request Support Visit</a></li>
+          <li><a href="centre-request-support-visit.html">Request Support Visit</a></li>
         </ul>
       </div>
     </li>
@@ -107,7 +107,7 @@
         <span>Focus Awards Resources</span>
       </a>
     </li>
-    <li class="main-nav__item  js-accordion-item">
+    <li class="main-nav__item  js-accordion-item  active">
       <div class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__forms.png" alt="Forms">
@@ -119,7 +119,7 @@
           <li><a href="forms-additional-qualifications.html">Additional Qualifications</a></li>
           <li><a href="forms-appleas.html">Appeals</a></li>
           <li><a href="forms-eqa-feedwback.html">EQA Feedback</a></li>
-          <li><a href="forms-complaints.html">Complaints</a></li>
+          <li><a class="active" href="forms-complaints.html">Complaints</a></li>
           <li><a href="forms-reasonable-adjustments.html">Reasonable Adjustments</a></li>
           <li><a href="#">Replacement Certificate</a></li>
           <li><a href="#">RPL</a></li>
@@ -132,57 +132,116 @@
 </nav>
 
         <div class="main-body__content">
-          <div class="breadcrumbs">
+          <div class="breadcrumbs  breadcrumbs--vertical">
   <div class="breadcrumbs__wrapper">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
         <a href="index.html" title="Home page">Home page</a>
       </li>
     </ul>
-    <h1 class="breadcrumbs__title">Request Support Visit</h1>
+    <h1 class="breadcrumbs__title">Complaint Form</h1>
+  </div>
+  <div class="breadcrumbs__text">
+    If you would like to request for Complaints, please complete this form.
   </div>
 </div>
 
           <div class="grid-container">
-            <div class="grid-item  grid-item--4  js-popup-parent">
-              <div class="content  content--form  block-shadow">
-  <form class="form  form--mid">
+            <div class="grid-item  grid-item--4">
+              <div class="content  content--big-table  block-shadow  content--padding-bottom">
+  <div class="content__header">
+    <h3 class="content__title">Part 1</h3>
+  </div>
+  <div class="content__body  content__body--form">
+    <form class="form  form--min">
+  <label class="form__label  form__label--margin-b">
+    <span>Name</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <div class="form__label  form__label--margin-b">
+    <span>Are you a: (please tick)</span>
+    <div class="form__radio-box">
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>Head of centre</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>Tutor/Assessor</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>IV</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio">
+        <b>Other (please state)</b>
+      </label>
+    </div>
+  </div>
+  <label class="form__label  form__label--margin-b">
+    <span>Address</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
   <label class="form__label">
-    <span>Contact Name</span>
+    <span>Telephone number</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <label class="form__label">
-    <span>Contact Email</span>
+    <span>Email address</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="email">
   </label>
-  <label class="form__label">
-    <span>Contact Number</span>
+  <label class="form__label  form__label--margin-b">
+    <span>Name of Centre</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
-  <label class="form__label">
-    <span>Qualification</span>
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  <label class="form__label  form__label--margin-b">
+    <span>Summary of complaint</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
   </label>
-  <label class="form__label">
-    <span>Type of Visit</span>
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
-      <option></option>
-      <option>Support</option>
-      <option>Report</option>
-    </select>
+  <label class="form__label  form__label--margin-b">
+    <span>What action, if any, have you already taken to try and resolve your complaint? (Whom did you speak to, when
+      and what was the response?)</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
   </label>
-  <label class="form__label">
-    <span>Reason For The Request</span>
+  <label class="form__label  form__label--margin-b">
+    <span>What actions do you feel might resolve the problem at this stage?</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
+  <div class="form__label  form__label--margin-b">
+    <span>Are you attaching any supporting documentations? (Please tick)</span>
+    <div class="form__radio-box">
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio-2">
+        <b>Yes</b>
+      </label>
+      <label class="form__radio  radio">
+        <input type="radio" name="name-radio-2">
+        <b>No</b>
+      </label>
+    </div>
+  </div>
+  <div class="form__label  form__label--margin-b  form__label--file">
+    <span>Upload File</span>
+    <div class="js-parent-file">
+      <button class="button  button--light  button--middle  js-button-file">Select file</button>
+      <input class="input  input--file  js-input-file" type="file">
+    </div>
+  </div>
+  <label class="form__label  form__label--margin-b">
+    <span>If yes, please give details</span>
     <textarea class="textarea  textarea--form  form__textarea"></textarea>
   </label>
   <label class="form__label">
-    <span>Additional Comments</span>
-    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+    <span>Date</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <div class="form__buttons">
     <button class="button  form__btn" type="submit">Submit</button>
   </div>
 </form>
+
+  </div>
 </div>
 
             </div>
