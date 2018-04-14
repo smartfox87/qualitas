@@ -7,6 +7,7 @@ $(function () {
   openPopup()
   initInputFile()
   reloadPageBtn()
+  toggleRowTable()
 })
 
 $(window).on('load', function () {
@@ -21,6 +22,20 @@ function toggleFadeMenu() {
     parent.find('.js-fade-menu-toggle').click(function () {
       parent.toggleClass('active')
       list.fadeToggle()
+    })
+  })
+}
+
+function toggleRowTable() {
+  $('.js-row-parent').each(function () {
+    const row = $(this).find('.js-row').last()
+    $('.js-add-row').click(function (event) {
+      event.preventDefault()
+      const cloneRow = row.clone(true)
+      cloneRow.fadeIn(300).insertBefore(row)
+    })
+    $('.js-delete-row').click(function () {
+      $(this).parents('.js-row').remove()
     })
   })
 }

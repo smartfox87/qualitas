@@ -60,7 +60,7 @@
 }
 
 .select {
-  padding-right: 40px;
+  padding-right: 35px;
   background: url("../img/arrow-down--light.png") no-repeat 304px center;
   appearance: none;
 }
@@ -147,6 +147,15 @@
       border: 1px solid #c6c6c6;
       border-radius: 6px;
       transition: 300ms;
+    }
+  }
+}
+
+.checkbox--min {
+  padding-left: 27px;
+  b {
+    &::before {
+      left: 0;
     }
   }
 }
