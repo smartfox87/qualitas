@@ -70,7 +70,7 @@
       <div class="main-nav__content  js-accordion-item-content">
         <ul>
           <li><a href="rqf-qualifications.html">Qualifications</a></li>
-          <li><a href="#">Register RQF Learners</a></li>
+          <li><a href="rqf-register-rqf-learners.html">Register RQF Learners</a></li>
           <li><a href="rqf-additional-qualifications.html">Additional Qualifications</a></li>
         </ul>
       </div>
@@ -100,7 +100,7 @@
       </a>
     </li>
     <li class="main-nav__item  js-accordion-item">
-      <a href="#" class="main-nav__caption  js-accordion-item-link">
+      <a href="resources.html" class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__resources.png" alt="Focus Awards Resources">
         </div>
@@ -121,9 +121,9 @@
           <li><a href="forms-eqa-feedwback.html">EQA Feedback</a></li>
           <li><a href="forms-complaints.html">Complaints</a></li>
           <li><a class="active" href="forms-reasonable-adjustments.html">Reasonable Adjustments</a></li>
-          <li><a href="#">Replacement Certificate</a></li>
-          <li><a href="#">RPL</a></li>
-          <li><a href="#">Special Considerations</a></li>
+          <li><a href="forms-replacement-certificate.html">Replacement Certificate</a></li>
+          <li><a href="forms-rpl.html">RPL</a></li>
+          <li><a href="forms-special-considerations.html">Special Considerations</a></li>
           <li><a href="forms-all-forms-status.html">Form Status</a></li>
         </ul>
       </div>
@@ -143,7 +143,7 @@
   </div>
   <div class="breadcrumbs__text">
     Please complete this request for reasonable adjustment form and return, using the email address/postal address
-    below, to Focus Awards. We will acknowledge receipt within 48 hours and explain what action will be taken next.
+    below, to Focus Awards. <br>We will acknowledge receipt within 48 hours and explain what action will be taken next.
   </div>
 </div>
 
@@ -154,69 +154,58 @@
     <h3 class="content__title">Part 1</h3>
   </div>
   <div class="content__body  content__body--form">
-    <form class="form  form--big-text">
+    <form class="form  form--min">
   <label class="form__label">
     <span>Centre Name</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <label class="form__label">
-    <span>Your Name</span>
+    <span>Centre Number</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Learner Name</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Qualification Title</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Unit name and number</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Reasonable adjustment required</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <label class="form__label  form__label--margin-b">
-    <span>Date Of Visit</span>
+    <span>Evidence to support application:<br>
+(e.g. medical certificate, psychological or other medical report, assessment of the learners condition)</span>
+    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  </label>
+  <div class="form__label  form__label--file  form__label--margin-b">
+    <span>Upload File</span>
+    <div class="js-parent-file">
+      <button class="button  button--light  button--middle  js-button-file">Select file</button>
+      <input class="input  input--file  js-input-file" type="file">
+    </div>
+  </div>
+  <div class="form__label  form__label--margin-b">
+    <span>Declaration</span>
+    <label class="form__checkbox  checkbox">
+      <input type="checkbox">
+      <b>The above application is fully supported by evidence and I am satisfied that all the information provided is
+        correct and verifiable</b>
+    </label>
+  </div>
+  <label class="form__label">
+    <span>Head of Centre Name (please print)</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
-  <div class="form__label  form__label--margin-b">
-    <span>Do you agree the EQA report is an accurate reflection of the monitoring activity and findings?</span>
-    <div class="form__radio-box">
-      <label class="form__radio  radio">
-        <input type="radio" name="name-radio">
-        <b>Yes</b>
-      </label>
-      <label class="form__radio  radio">
-        <input type="radio" name="name-radio">
-        <b>No</b>
-      </label>
-    </div>
-  </div>
-  <label class="form__label  form__label--margin-b">
-    <span>If you have stated no, please expand and tell us why you do not agree with the EQA’s decision. Alternatively,
-      if you have answered yes, please feel free to make any general comments regarding the overall outcome of your visit.</span>
-    <textarea class="textarea  textarea--form  form__textarea"></textarea>
-  </label>
-  <div class="form__label  form__label--margin-b">
-    <span>Do you agree the EQA report is an accurate reflection of the monitoring activity and findings?</span>
-    <div class="form__radio-box">
-      <label class="form__radio  radio">
-        <input type="radio" name="name-radio-2">
-        <b>Very satisfied</b>
-      </label>
-      <label class="form__radio  radio">
-        <input type="radio" name="name-radio-2">
-        <b>Satisfied</b>
-      </label>
-      <label class="form__radio  radio">
-        <input type="radio" name="name-radio-2">
-        <b>Not satisfied</b>
-      </label>
-    </div>
-  </div>
-  <label class="form__label  form__label--margin-b">
-    <span>If appropriate, do you have views on whether the assessment arrangements for the qualification(s) covered by
-      this engagement were fit for purpose and/or enable your centre to deliver the qualification efficiently and effectively?</span>
-    <textarea class="textarea  textarea--form  form__textarea"></textarea>
-  </label>
-  <label class="form__label  form__label--margin-b">
-    <span>Do you have any views on the qualification(s) covered by this engagement that you wish to feedback to us
-      (e.g. the relevance of the qualification to sector needs, progression opportunities, or the appropriateness of
-      the qualification specification)?</span>
-    <textarea class="textarea  textarea--form  form__textarea"></textarea>
-  </label>
-  <label class="form__label  form__label--margin-b">
-    <span>If appropriate, any other comments/feedback you wish to make about the visit and/or Focus Awards and the
-      services and qualifications we provide.</span>
-    <textarea class="textarea  textarea--form  form__textarea"></textarea>
+  <label class="form__label">
+    <span>Date</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
   <div class="form__buttons">
     <button class="button  form__btn" type="submit">Submit</button>

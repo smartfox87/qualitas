@@ -26,6 +26,23 @@
   }
 }
 
+.form--mid-2 {
+  .form__label {
+    span {
+      width: 284px;
+    }
+  }
+  .form__input, .form__textarea, .form__select {
+    width: 400px;
+  }
+  .form__buttons {
+    padding-left: 284px;
+  }
+  .form__select {
+    background-position: 365px center;
+  }
+}
+
 .form--min {
   .form__label {
     span {
@@ -104,6 +121,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  width: auto;
   .form__label, .form__label--file {
     margin-top: 0;
     margin-bottom: 0;
@@ -177,16 +195,17 @@
 }
 
 .form__select--short {
-  width: 215px;
+  width: 215px !important;
+  background-position: 183px center !important;
 }
 
 .form__select--min {
-  width: 113px;
-  background-position: 82px center;
+  width: 113px !important;
+  background-position: 82px center !important;
 }
 
 .form__input--short {
-  width: 155px;
+  width: 155px !important;
 }
 
 .form__buttons {

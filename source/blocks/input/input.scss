@@ -65,10 +65,6 @@
   appearance: none;
 }
 
-.select--short {
-  background-position: 183px center;
-}
-
 .input--form, .textarea--form, .select--form {
   &:focus, &:hover {
     border: 1px solid #b5bfd6;
@@ -145,7 +141,7 @@
     transition: 300ms;
     @include pseudo-before(21px, 21px);
     &::before {
-      top: 1px;
+      top: 3px;
       left: 12px;
       background-color: white;
       border: 1px solid #c6c6c6;

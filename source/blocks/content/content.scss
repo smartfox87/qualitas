@@ -226,7 +226,7 @@
 
 .content__item {
   display: none;
-  flex-grow: 1;
+                        flex-grow: 1;
   &[data-active="true"] {
     display: block;
   }

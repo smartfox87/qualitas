@@ -103,8 +103,10 @@
 }
 
 .button--red {
+  color: #cf9191;
   &:hover {
-    background-color: rgba(239, 134, 114, 1);
-    border: 2px solid rgba(239, 134, 114, 1);
+    color: #ffffff;
+    background-color: rgba(228, 54, 20, 0.6);
+    border: 2px solid rgba(228, 54, 20, 0);
   }
 }
