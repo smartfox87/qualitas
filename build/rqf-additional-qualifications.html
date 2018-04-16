@@ -132,7 +132,7 @@
 </nav>
 
         <div class="main-body__content  js-popup-parent">
-          <div class="breadcrumbs  breadcrumbs--vertical">
+          <div class="breadcrumbs">
   <div class="breadcrumbs__wrapper">
     <ul class="breadcrumbs__list">
       <li class="breadcrumbs__item">
@@ -141,7 +141,7 @@
     </ul>
     <h1 class="breadcrumbs__title">Additional Qualifications</h1>
   </div>
-  <div class="js-popup" style="display: none;">
+  <div class="js-popup" style="width: 100%; display: none;">
     <div class="breadcrumbs__text">
       If you would like to request approval for additional qualifications, please complete this form
     </div>
@@ -211,8 +211,9 @@
   <div class="content__header">
     <h3 class="content__title  content__title--bold">Assessor Details</h3>
   </div>
-  <div class="content__body  content__body--form">
-    <form class="form  form--big">
+  <div class="js-dublicate-parent">
+    <div class="content__body  content__body--form  js-dublicate-item">
+      <form class="form  form--big">
   <label class="form__label">
     <span>Name</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
@@ -229,20 +230,50 @@
     <span>Qualifications</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
+  <div class="form__buttons">
+    <a href="#" class="button  button--icon  button--icon-del  button--red-fill  js-dublicate-delete"
+            style="margin-left: auto;">Delete row</a>
+  </div>
 </form>
 
+    </div>
+    <div class="content__body  content__body--form  js-dublicate-item" style="display:none;">
+      <form class="form  form--big">
+  <label class="form__label">
+    <span>Name</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Contact Email</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="email">
+  </label>
+  <label class="form__label">
+    <span>Contact Telephone</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Qualifications</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <div class="form__buttons">
+    <a href="#" class="button  button--icon  button--icon-del  button--red-fill  js-dublicate-delete"
+            style="margin-left: auto;">Delete row</a>
   </div>
-  <div class="content__footer">
-    <div class="content__buttons">
-      <button class="button  button--icon  button--green  button--margin-r">Add acessor</button>
-      <button class="button  button--icon  button--icon-del  button--red-fill">Delete row</button>
+</form>
+
+    </div>
+    <div class="content__footer">
+      <div class="content__buttons">
+        <button class="button  button--icon  button--green  js-dublicate-add">Add acessor</button>
+      </div>
     </div>
   </div>
   <div class="content__header">
     <h3 class="content__title  content__title--bold">IQA Details</h3>
   </div>
-  <div class="content__body  content__body--form">
-    <form class="form  form--big">
+  <div class="js-dublicate-parent">
+    <div class="content__body  content__body--form  js-dublicate-item">
+      <form class="form  form--big">
   <label class="form__label">
     <span>Name</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
@@ -259,13 +290,42 @@
     <span>Qualifications</span>
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
   </label>
+  <div class="form__buttons">
+    <a href="#" class="button  button--icon  button--icon-del  button--red-fill  js-dublicate-delete"
+            style="margin-left: auto;">Delete row</a>
+  </div>
 </form>
 
+    </div>
+    <div class="content__body  content__body--form  js-dublicate-item" style="display:none;">
+      <form class="form  form--big">
+  <label class="form__label">
+    <span>Name</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Contact Email</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="email">
+  </label>
+  <label class="form__label">
+    <span>Contact Telephone</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <label class="form__label">
+    <span>Qualifications</span>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+  </label>
+  <div class="form__buttons">
+    <a href="#" class="button  button--icon  button--icon-del  button--red-fill  js-dublicate-delete"
+            style="margin-left: auto;">Delete row</a>
   </div>
-  <div class="content__footer">
-    <div class="content__buttons">
-      <button class="button  button--icon  button--green  button--margin-r">Add iqa</button>
-      <button class="button  button--icon  button--icon-del  button--red-fill">Delete row</button>
+</form>
+
+    </div>
+    <div class="content__footer">
+      <div class="content__buttons">
+        <button class="button  button--icon  button--green  js-dublicate-add">Add iqa</button>
+      </div>
     </div>
   </div>
   <div class="content__buttons">

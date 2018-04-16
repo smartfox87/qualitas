@@ -8,6 +8,7 @@
   font-family: Roboto;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
+  text-decoration: none;
   background-color: #7b89ad;
   border: none;
   border-radius: 19px;
@@ -108,5 +109,12 @@
     color: #ffffff;
     background-color: rgba(228, 54, 20, 0.6);
     border: 2px solid rgba(228, 54, 20, 0);
+  }
+}
+
+.button--lime{
+  background-color: rgba(127, 163, 55, 0.8);
+  &:hover{
+    background-color: rgba(127, 163, 55, 1);
   }
 }

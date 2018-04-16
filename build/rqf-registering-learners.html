@@ -174,11 +174,11 @@
           <div class="grid-container">
             <div class="grid-item  grid-item--4">
               <div class="content  content--big-table  block-shadow">
-  <table class="table  table--big  table--top-cell  js-row-parent">
+  <table class="table  table--big  table--top-cell  table--no-first-border  js-dublicate-parent">
   <tbody>
-    <tr class="table__row  table__row--no-border">
+    <tr class="table__row  js-dublicate-item">
       <td class="table__cell  table__cell--5">
-        <div class="table__item-number">1.</div>
+        <div class="table__item-number  js-dublicate-item-number">1</div>
       </td>
       <td class="table__cell  table__cell--95">
         <form class="form  form--horizontal" style="flex-wrap: wrap;">
@@ -213,19 +213,17 @@
     </select>
   </div>
   <div class="form__row">
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
+            type="text" placeholder="ULN/Student number">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Reasonable Adjustments</b>
     </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
-      <input type="checkbox">
-      <b>Reasonable Adjustments</b>
-    </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Exemptions, equivalences, credit transfer or RPL</b>
     </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Confirmed learner identity</b>
     </label>
@@ -234,11 +232,14 @@
 
       </td>
       <td class="table__cell" style="text-align:right; width: 15px;">
+        <span class="table__delete-img  js-dublicate-delete">
+          <span class="close-btn"></span>
+        </span>
       </td>
     </tr>
-    <tr class="table__row  js-row" style="display: none;">
+    <tr class="table__row  js-dublicate-item" style="display: none;">
       <td class="table__cell  table__cell--5">
-        <div class="table__item-number">1.</div>
+        <div class="table__item-number  js-dublicate-item-number">1</div>
       </td>
       <td class="table__cell  table__cell--95">
         <form class="form  form--horizontal" style="flex-wrap: wrap;">
@@ -273,19 +274,17 @@
     </select>
   </div>
   <div class="form__row">
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
+            type="text" placeholder="ULN/Student number">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Reasonable Adjustments</b>
     </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
-      <input type="checkbox">
-      <b>Reasonable Adjustments</b>
-    </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Exemptions, equivalences, credit transfer or RPL</b>
     </label>
-    <label class="form__checkbox  checkbox  checkbox--min">
+    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Confirmed learner identity</b>
     </label>
@@ -294,14 +293,17 @@
 
       </td>
       <td class="table__cell" style="text-align:right; width: 15px;">
-        <span class="table__delete-img  js-delete-row">
+        <span class="table__delete-img  js-dublicate-delete">
           <span class="close-btn"></span>
         </span>
       </td>
     </tr>
     <tr class="table__row">
       <td class="table__cell" colspan="3">
-        <a class="table__btn  button  button--min  button--table  js-add-row" href="#">Add Learners</a>
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <a class="table__btn  button  button--min  button--table  js-dublicate-add" href="#">Add Learners</a>
+          <button type="submit" class="table__btn  button  button--lime" href="#">Next</button>
+        </div>
       </td>
     </tr>
   </tbody>

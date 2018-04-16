@@ -58,6 +58,14 @@
   }
 }
 
+.table--no-first-border {
+  .table__row:first-child {
+    .table__cell {
+      border-top: none;
+    }
+  }
+}
+
 .table__row {
   &:hover {
     .table__details {
@@ -244,4 +252,29 @@
   display: inline-block;
   width: 15px;
   height: 15px;
+}
+
+.table__accordion {
+  &.active {
+    .table__accordion-toggler--close {
+      display: block;
+    }
+    .table__accordion-toggler--open {
+      display: none;
+    }
+  }
+}
+
+.table__accordion-toggler {
+  display: block;
+  margin-left: 44px;
+}
+
+.table__accordion-toggler--close {
+  display: none;
+}
+
+.table__accordion-content {
+  margin-top: 10px;
+  margin-left: 32px;
 }

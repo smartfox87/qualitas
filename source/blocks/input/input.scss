@@ -113,6 +113,7 @@
 
 .checkbox {
   position: relative;
+  display: inline-block;
   margin: 0 0 6px;
   padding: 3px 0 4px 44px;
   cursor: pointer;
@@ -148,6 +149,21 @@
       border-radius: 6px;
       transition: 300ms;
     }
+  }
+}
+
+.checkbox--dark {
+  &:hover {
+    b {
+      color: rgba(35, 35, 35, 1);
+      &::before {
+        border-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  b {
+    font-weight: 700;
+    color: rgba(35, 35, 35, 0.8);
   }
 }
 

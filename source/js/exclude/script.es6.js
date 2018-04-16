@@ -8,6 +8,7 @@ $(function () {
   initInputFile()
   reloadPageBtn()
   toggleRowTable()
+  checkAllItemsInTable()
 })
 
 $(window).on('load', function () {
@@ -27,15 +28,32 @@ function toggleFadeMenu() {
 }
 
 function toggleRowTable() {
-  $('.js-row-parent').each(function () {
-    const row = $(this).find('.js-row').last()
-    $('.js-add-row').click(function (event) {
+  $('.js-dublicate-parent').each(function () {
+    const item = $(this).find('.js-dublicate-item').last()
+    const parent = $(this)
+    parent.find('.js-dublicate-add').click((event) => {
       event.preventDefault()
-      const cloneRow = row.clone(true)
-      cloneRow.fadeIn(300).insertBefore(row)
+      const itemsCount = $(this).find('.js-dublicate-item').length
+      const cloneRow = item.clone(true)
+      cloneRow.find('.js-dublicate-item-number').text(itemsCount)
+      cloneRow.fadeIn(300).insertBefore(item)
     })
-    $('.js-delete-row').click(function () {
-      $(this).parents('.js-row').remove()
+    parent.find('.js-dublicate-delete').click(function (event) {
+      event.preventDefault()
+      const itemsCount = parent.find('.js-dublicate-item').length
+      if (itemsCount > 2) {
+        $(this).parents('.js-dublicate-item').remove()
+      }
+    })
+  })
+}
+
+function checkAllItemsInTable() {
+  $('.js-check-parent').each(function () {
+    const items = $(this).find('.js-check-item')
+    $(this).find('.js-check-select-all-items').change(function () {
+      const stateChecked = $(this).prop('checked')
+      items.prop('checked', stateChecked)
     })
   })
 }

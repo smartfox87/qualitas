@@ -10,6 +10,7 @@ $(function () {
   initInputFile();
   reloadPageBtn();
   toggleRowTable();
+  checkAllItemsInTable();
 });
 
 $(window).on('load', function () {
@@ -29,15 +30,34 @@ function toggleFadeMenu() {
 }
 
 function toggleRowTable() {
-  $('.js-row-parent').each(function () {
-    var row = $(this).find('.js-row').last();
-    $('.js-add-row').click(function (event) {
+  $('.js-dublicate-parent').each(function () {
+    var _this = this;
+
+    var item = $(this).find('.js-dublicate-item').last();
+    var parent = $(this);
+    parent.find('.js-dublicate-add').click(function (event) {
       event.preventDefault();
-      var cloneRow = row.clone(true);
-      cloneRow.fadeIn(300).insertBefore(row);
+      var itemsCount = $(_this).find('.js-dublicate-item').length;
+      var cloneRow = item.clone(true);
+      cloneRow.find('.js-dublicate-item-number').text(itemsCount);
+      cloneRow.fadeIn(300).insertBefore(item);
     });
-    $('.js-delete-row').click(function () {
-      $(this).parents('.js-row').remove();
+    parent.find('.js-dublicate-delete').click(function (event) {
+      event.preventDefault();
+      var itemsCount = parent.find('.js-dublicate-item').length;
+      if (itemsCount > 2) {
+        $(this).parents('.js-dublicate-item').remove();
+      }
+    });
+  });
+}
+
+function checkAllItemsInTable() {
+  $('.js-check-parent').each(function () {
+    var items = $(this).find('.js-check-item');
+    $(this).find('.js-check-select-all-items').change(function () {
+      var stateChecked = $(this).prop('checked');
+      items.prop('checked', stateChecked);
     });
   });
 }
@@ -128,10 +148,10 @@ function showPage() {
 
 function closePopup() {
   $('.js-popup').each(function () {
-    var _this = this;
+    var _this2 = this;
 
     $(this).find('.js-close-popup').click(function () {
-      $(_this).fadeOut(300).removeClass('active');
+      $(_this2).fadeOut(300).removeClass('active');
     });
   });
 }
