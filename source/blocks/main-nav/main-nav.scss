@@ -63,24 +63,24 @@
 }
 
 .main-nav__content {
-  padding: 20px 20px 0;
-  border-bottom: 1px solid #ececec;
+  margin-top: 20px;
+  padding: 0 20px;
+  background: #f2f3f7;
   ul {
     margin: 0;
     padding: 10px 0;
     list-style-type: none;
-    border-top: 1px solid #f7f7f7;
   }
   li > a {
     position: relative;
     display: block;
     font-size: 12px;
     line-height: 33px;
-    color: #9a9a9a;
+    color: #626b77;
     text-decoration: none;
     transition: 300ms;
     &.active, &:hover {
-      color: #7b89ad;
+      color: #7182b2;
       &::after {
         opacity: 1;
       }

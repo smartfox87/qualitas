@@ -83,8 +83,17 @@ html {
 .border-b-dark {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
+
 .border-b-green {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.border-t-green {
+  border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+
+.border-t-dark {
+  border-top: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
 .mark-color {
@@ -123,7 +132,6 @@ html {
   }
 }
 
-
 .close-btn {
   @include modal-close(14px, 14px, 18px, 1px, #000000);
   top: 0;
@@ -134,7 +142,6 @@ html {
     opacity: 0.8;
   }
 }
-
 
 .sm-prompt {
   display: block;
