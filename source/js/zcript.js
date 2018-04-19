@@ -9,7 +9,7 @@ $(function () {
   openPopup();
   initInputFile();
   reloadPageBtn();
-  toggleRowTable();
+  duplicateBlocks();
   checkAllItemsInTable();
 });
 
@@ -29,7 +29,7 @@ function toggleFadeMenu() {
   });
 }
 
-function toggleRowTable() {
+function duplicateBlocks() {
   $('.js-dublicate-parent').each(function () {
     var _this = this;
 
@@ -83,7 +83,6 @@ function toggleAccordion() {
   });
 }
 
-//************************ content toggle tab **********************
 function toggleContentBlock() {
   $('.js-content-toggle').each(function () {
     var items = $(this).find('.js-content-toggle-item');
@@ -151,7 +150,12 @@ function closePopup() {
     var _this2 = this;
 
     $(this).find('.js-close-popup').click(function () {
-      $(_this2).fadeOut(300).removeClass('active');
+      $(_this2).fadeOut(0).removeClass('active');
+    });
+    $(window).keyup(function (event) {
+      if (event.keyCode === 27) {
+        $(_this2).fadeOut(0).removeClass('active');
+      }
     });
   });
 }

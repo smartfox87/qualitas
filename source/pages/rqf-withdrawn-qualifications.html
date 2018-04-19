@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qualitais</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="main-body">
+    <div class="main-body__wrapper">
+      <div class="main-body__header">
+        @@include("../blocks/main-header/main-header.html")
+      </div>
+      <div class="main-body__main">
+        @@include("../blocks/main-nav/main-nav--rqf-withdrawn-qualifications.html")
+        <div class="main-body__content">
+          @@include("../blocks/breadcrumbs/breadcrumbs--rqf-withdrawn-qualifications.html")
+          <div class="grid-container">
+            <div class="grid-item  grid-item--4  js-popup-parent">
+              @@include("../blocks/table-tools/table-tools--rqf-withdrawn-qualifications.html")
+              @@include("../blocks/content/content--rqf-withdrawn-qualifications.html")
+              @@include("../blocks/pagination/pagination.html")
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

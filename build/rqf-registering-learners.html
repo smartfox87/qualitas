@@ -63,15 +63,33 @@
     <li class="main-nav__item  js-accordion-item">
       <div class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
-          <img src="img/nav__qcf.png" alt="RQF">
+          <img src="img/nav__qcf.png" alt="FQP">
         </div>
-        <span>RQF</span>
+        <span>FQP</span>
+      </div>
+      <div class="main-nav__content  js-accordion-item-content">
+        <ul>
+          <li><a href="rqf-fqp-courses.html">Qualifications</a></li>
+          <li><a href="rqf-register-fqp-learners.html">Register FQP Learners</a></li>
+          <li><a href="rqf-fqp-additional-qualifications.html">Additional Qualifications</a></li>
+          <li><a href="rqf-fqp-withdrawn-qualifications.html">Withdrawn Qualifications</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="main-nav__item  js-accordion-item">
+      <div class="main-nav__caption  js-accordion-item-link">
+        <div class="main-nav__icon">
+          <img src="img/nav__qcf.png" alt="QCF">
+        </div>
+        <span>QCF</span>
       </div>
       <div class="main-nav__content  js-accordion-item-content">
         <ul>
           <li><a href="rqf-qualifications.html">Qualifications</a></li>
-          <li><a href="rqf-register-rqf-learners.html">Register RQF Learners</a></li>
+          <li><a href="rqf-register-rqf-learners.html">Register QCF Learners</a></li>
           <li><a href="rqf-additional-qualifications.html">Additional Qualifications</a></li>
+          <li><a href="rqf-withdrawn-qualifications.html">Withdrawn Qualifications</a></li>
         </ul>
       </div>
     </li>
@@ -189,14 +207,7 @@
             type="text" placeholder="Surname">
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
             type="text" placeholder="Date Of Birth">
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
-            type="text" placeholder="Postcode">
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--min">
-      <option>Gender</option>
-      <option>Male</option>
-      <option>Female</option>
-    </select>
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--mid">
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
       <option>Ethnicity</option>
       <optgroup label="White">
         <option>English/Welsh/Scottish/Northern Irish/British</option>
@@ -211,18 +222,26 @@
         <option>Any other Mixed/Multiple ethnic background</option>
       </optgroup>
     </select>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input"
+            style="width: 180px" type="text" placeholder="Reasonable Adjustments">
   </div>
   <div class="form__row">
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
-            type="text" placeholder="ULN/Student number">
-    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
-      <input type="checkbox">
-      <b>Reasonable Adjustments</b>
-    </label>
-    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
-      <input type="checkbox">
-      <b>Exemptions, equivalences, credit transfer or RPL</b>
-    </label>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--min">
+      <option>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
+            type="text" placeholder="Postcode">
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input"
+            type="text" placeholder="Exemptions, equivalences, credit transfer or RPL">
+    <div style="position: relative; padding-right: 37px;">
+      <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
+              type="text" placeholder="ULN/Student number">
+      <i class="sm-prompt">?
+        <p>For learners on funded qualifications you must provide the learner’s ULN. If you do not offer funded
+          qualifications, you must provide a unique identifier for each learner or obtain the learner’s ULN.</p></i>
+    </div>
     <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Confirmed learner identity</b>
@@ -250,14 +269,7 @@
             type="text" placeholder="Surname">
     <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
             type="text" placeholder="Date Of Birth">
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
-            type="text" placeholder="Postcode">
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--min">
-      <option>Gender</option>
-      <option>Male</option>
-      <option>Female</option>
-    </select>
-    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--mid">
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
       <option>Ethnicity</option>
       <optgroup label="White">
         <option>English/Welsh/Scottish/Northern Irish/British</option>
@@ -272,18 +284,26 @@
         <option>Any other Mixed/Multiple ethnic background</option>
       </optgroup>
     </select>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input"
+            style="width: 180px" type="text" placeholder="Reasonable Adjustments">
   </div>
   <div class="form__row">
-    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
-            type="text" placeholder="ULN/Student number">
-    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
-      <input type="checkbox">
-      <b>Reasonable Adjustments</b>
-    </label>
-    <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
-      <input type="checkbox">
-      <b>Exemptions, equivalences, credit transfer or RPL</b>
-    </label>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select  form__select--min">
+      <option>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+    </select>
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--min"
+            type="text" placeholder="Postcode">
+    <input class="input  input--border  input--form  input--shadow  input--dark  form__input"
+            type="text" placeholder="Exemptions, equivalences, credit transfer or RPL">
+    <div style="position: relative; padding-right: 37px;">
+      <input class="input  input--border  input--form  input--shadow  input--dark  form__input  form__input--short"
+              type="text" placeholder="ULN/Student number">
+      <i class="sm-prompt">?
+        <p>For learners on funded qualifications you must provide the learner’s ULN. If you do not offer funded
+          qualifications, you must provide a unique identifier for each learner or obtain the learner’s ULN.</p></i>
+    </div>
     <label class="form__checkbox  checkbox  checkbox--min" style="margin-top: 5px;">
       <input type="checkbox">
       <b>Confirmed learner identity</b>

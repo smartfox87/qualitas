@@ -15,6 +15,7 @@
   outline: none;
   cursor: pointer;
   transition: 300ms;
+  display: inline-block;
   &:hover {
     background-color: #606f94;
   }
@@ -40,31 +41,6 @@
   &:hover {
     color: rgba(111, 117, 130, 0.9);
     background-color: #e6e9f0;
-  }
-}
-
-.button--white {
-  color: rgba(0, 0, 0, 0.4);
-  background: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  &:hover {
-    color: rgba(0, 0, 0, 0.6);
-    background: none;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-  }
-}
-
-.button--green {
-  background-color: rgba(137, 150, 110, 0.8);
-  &:hover {
-    background-color: rgba(137, 150, 110, 1);
-  }
-}
-
-.button--red-fill {
-  background-color: #c69078;
-  &:hover {
-    background-color: rgba(239, 134, 114, 1);
   }
 }
 
@@ -103,6 +79,34 @@
   }
 }
 
+.button--white {
+  color: rgba(0, 0, 0, 0.4);
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.button--green {
+  background-color: rgba(137, 150, 110, 0.8);
+  &:hover {
+    background-color: rgba(137, 150, 110, 1);
+  }
+}
+
+.button--red-fill {
+  color: #ffffff;
+  background-color: #c69078;
+  border-color: #c69078;
+  &:hover {
+    background-color: rgba(239, 134, 114, 1);
+    border-color: rgba(239, 134, 114, 1);
+  }
+}
+
 .button--red {
   color: #cf9191;
   &:hover {
@@ -112,9 +116,9 @@
   }
 }
 
-.button--lime{
+.button--lime {
   background-color: rgba(127, 163, 55, 0.8);
-  &:hover{
+  &:hover {
     background-color: rgba(127, 163, 55, 1);
   }
 }

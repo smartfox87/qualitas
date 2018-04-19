@@ -134,3 +134,55 @@ html {
     opacity: 0.8;
   }
 }
+
+
+.sm-prompt {
+  display: block;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-style: normal;
+  right: 18px;
+  top: 10px;
+  font-size: 0;
+  position: absolute;
+  font-family: Roboto;
+  &::before {
+    content: '?';
+    position: absolute;
+    display: inline-block;
+    z-index: 1000;
+    width: 20px;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    background: #b6b6b6;
+    border-radius: 50%;
+    height: 20px;
+    color: #ffffff;
+    line-height: 21px;
+    text-align: center;
+    font-size: 16px;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+    p {
+      display: block;
+    }
+  }
+  p {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    width: 360px;
+    font-size: 14px;
+    background: #ffffff;
+    box-shadow: 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    padding: 12px 20px;
+    z-index: 1000;
+  }
+}

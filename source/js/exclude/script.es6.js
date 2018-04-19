@@ -7,7 +7,7 @@ $(function () {
   openPopup()
   initInputFile()
   reloadPageBtn()
-  toggleRowTable()
+  duplicateBlocks()
   checkAllItemsInTable()
 })
 
@@ -27,7 +27,7 @@ function toggleFadeMenu() {
   })
 }
 
-function toggleRowTable() {
+function duplicateBlocks() {
   $('.js-dublicate-parent').each(function () {
     const item = $(this).find('.js-dublicate-item').last()
     const parent = $(this)
@@ -77,7 +77,6 @@ function toggleAccordion() {
   });
 }
 
-//************************ content toggle tab **********************
 function toggleContentBlock() {
   $('.js-content-toggle').each(function () {
     const items = $(this).find('.js-content-toggle-item')
@@ -153,7 +152,12 @@ function showPage() {
 function closePopup() {
   $('.js-popup').each(function () {
     $(this).find('.js-close-popup').click(() => {
-      $(this).fadeOut(300).removeClass('active')
+      $(this).fadeOut(0).removeClass('active')
+    })
+    $(window).keyup((event) => {
+      if (event.keyCode === 27) {
+        $(this).fadeOut(0).removeClass('active')
+      }
     })
   })
 }
