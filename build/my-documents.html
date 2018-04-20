@@ -170,12 +170,20 @@
     <select
             class="select  select--border  select--form  select--shadow  select--short  select--dark  form__select--short">
       <option>Select Category</option>
-      <option>Support</option>
-      <option>Report</option>
+      <option value="Policies and Procedures">Policies and Procedures</option>
+      <option value="Qualification Resources">Qualification Resources</option>
+      <option value="Previous EQA Reports">Previous EQA Reports</option>
+      <option value="Course Dates">Course Dates</option>
+      <option value="Action Plan">Action Plan</option>
+      <option value="EQA Reports">EQA Reports</option>
+      <option value="Resources">Resources</option>
+      <option value="Specifications">Specifications</option>
+      <option value="Policy Templates">Policy Templates</option>
+      <option value="how to guides">how to guides</option>
     </select>
   </label>
   <div class="form__label  form__label--file">
-    <span>Your File:</span>
+    <span>Upload File:</span>
     <div class="js-parent-file">
       <button class="button  button--light  button--middle  js-button-file">Select file</button>
       <input class="input  input--file  js-input-file" type="file">
@@ -183,10 +191,9 @@
     </div>
   </div>
 </form>
-
 </div>
 
-              <div class="content  content--big-table  block-shadow">
+              <div class="content  content--big-table  block-shadow  js-popup-parent">
   <table class="table  table--big">
   <thead>
     <th class="table__head">
@@ -219,7 +226,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -238,7 +245,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -257,7 +264,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -276,7 +283,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -295,7 +302,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -314,7 +321,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -333,7 +340,7 @@
       </td>
       <td class="table__cell">pdf</td>
       <td class="table__cell">
-        <a href="#" class="table__link"><span class="nowrap">Policies And Procedures</span></a>
+        <a href="#" class="table__link  js-open-popup"><span class="nowrap">Policies And Procedures</span></a>
       </td>
       <td class="table__cell  table__cell--btn">
         <a class="table__btn  button  button--min  button--table" href="#">Download</a>
@@ -343,6 +350,35 @@
   </tbody>
 </table>
 
+  <div class="popup  popup--form  js-popup">
+  <div class="popup__header">
+    <h2 class="popup__title">Edit Category</h2>
+    <div class="popup__close  js-close-popup"></div>
+  </div>
+  <form class="form">
+  <label class="form__label">
+    <span>Category</span>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
+      <option></option>
+      <option value="Policies and Procedures">Policies and Procedures</option>
+      <option value="Qualification Resources">Qualification Resources</option>
+      <option value="Previous EQA Reports">Previous EQA Reports</option>
+      <option value="Course Dates">Course Dates</option>
+      <option value="Action Plan">Action Plan</option>
+      <option value="EQA Reports">EQA Reports</option>
+      <option value="Resources">Resources</option>
+      <option value="Specifications">Specifications</option>
+      <option value="Policy Templates">Policy Templates</option>
+      <option value="how to guides">how to guides</option>
+    </select>
+  </label>
+  <div class="form__buttons">
+    <button class="button  form__btn" type="submit">Save changes</button>
+    <button class="button  button--white  form__btn  js-close-popup" type="button">Close</button>
+  </div>
+</form>
+</div>
+<div class="popup__overlay"></div>
 </div>
 
               <div class="pagination">

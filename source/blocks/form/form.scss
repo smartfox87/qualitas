@@ -80,6 +80,15 @@
   }
 }
 
+.form--big-input {
+  .form__input, .form__textarea, .form__select {
+    width: 615px;
+  }
+  .form__select {
+    background-position: 580px center;
+  }
+}
+
 .form--big {
   .form__label {
     span {
@@ -152,7 +161,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  span {
+  span, .form__name {
     align-self: flex-start;
     box-sizing: border-box;
     width: 150px;
@@ -162,6 +171,58 @@
     line-height: 23px;
     text-align: right;
     color: rgba(35, 35, 35, 0.6);
+  }
+}
+
+.form__label--ckeditor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  .form__name {
+    align-self: flex-start;
+    box-sizing: border-box;
+    width: 150px;
+    margin-top: 8px;
+    padding-right: 25px;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    color: rgba(35, 35, 35, 0.6);
+  }
+  .cke_bottom, .cke_top {
+    background: none;
+    border-color: #e8e8e8;
+  }
+  .cke_top {
+    padding: 15px 10px 10px 15px;
+  }
+  .cke_bottom {
+    padding: 7px 12px 6px;
+  }
+  .cke {
+    font-family: Roboto;
+    border: 1px solid #e8e8e8;
+    border-radius: 19px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .06);
+  }
+  .cke_inner {
+    border-radius: 19px;
+  }
+  .cke_resizer {
+    margin-top: 2px;
+    margin-right: 1px;
+  }
+  .cke_editable {
+    margin: 8px 10px;
+    font-size: 15px;
+    font-family: Roboto;
+    color: rgba(35, 35, 35, .9);
+  }
+  .cke_resizer {
+    opacity: 0.6;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
 

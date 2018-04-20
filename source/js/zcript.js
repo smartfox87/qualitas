@@ -11,11 +11,18 @@ $(function () {
   reloadPageBtn();
   duplicateBlocks();
   checkAllItemsInTable();
+  initCkeditor();
 });
 
 $(window).on('load', function () {
   showPage();
 });
+
+function initCkeditor() {
+  if (CKEDITOR) {
+    CKEDITOR.replace('emails-message');
+  }
+}
 
 function toggleFadeMenu() {
   $('.js-user-menu').each(function () {
