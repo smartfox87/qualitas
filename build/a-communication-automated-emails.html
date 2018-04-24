@@ -6,8 +6,8 @@
             content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qualitais</title>
-    <script src="https://qualitas.focusawards.org.uk/newassets/plugins/ckeditor/ckeditor.js" defer=""></script>
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://qualitas.focusawards.org.uk/newassets/plugins/ckeditor/ckeditor.js" defer></script>
   </head>
   <body class="main-body">
     <div class="main-body__wrapper">
@@ -76,7 +76,7 @@
       </div>
     </li>
     <li class="main-nav__item  js-accordion-item">
-      <a href="#" class="main-nav__caption  js-accordion-item-link">
+      <a href="a-centre-management.html" class="main-nav__caption  js-accordion-item-link">
         <div class="main-nav__icon">
           <img src="img/nav__documents.png" alt="Centre Management">
         </div>
@@ -92,14 +92,14 @@
       </div>
       <div class="main-nav__content  js-accordion-item-content">
         <ul>
-          <li><a href="#">Manage Focus Staff</a></li>
+          <li><a href="a-admin-manage-focus-staff.html">Manage Focus Staff</a></li>
           <li><a href="#">Manage Staff Activities</a></li>
-          <li><a href="#">Email Settings</a></li>
-          <li><a href="#">Manage Bugs</a></li>
+          <li><a href="a-admin-email-settings.html">Email Settings</a></li>
+          <li><a href="a-admin-manage-bugs.html">Manage Bugs</a></li>
           <li><a href="#">Manage Forms</a></li>
-          <li><a href="#">Invoice Plans</a></li>
-          <li><a href="#">Alert Settings</a></li>
-          <li><a href="#">Strength Setting</a></li>
+          <li><a href="a-admin-invoice-plans.html">Invoice Plans</a></li>
+          <li><a href="a-admin-alert-settings.html">Alert Settings</a></li>
+          <li><a href="a-admin-strength-settings.html">Strength Setting</a></li>
         </ul>
       </div>
     </li>
@@ -246,5 +246,9 @@
       </div>
     </div>
     <script src="js/script.min.js"></script>
+    <script defer>
+      window.addEventListener('load', function () {
+        CKEDITOR.replace('emails-message');
+      })</script>
   </body>
 </html>

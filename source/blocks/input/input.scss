@@ -16,6 +16,10 @@
     font-size: 13px;
     color: rgba(35, 35, 35, 0.3);
   }
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 }
 
 .input--search {
@@ -28,11 +32,17 @@
   &:hover, &:focus {
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
   }
+  &[disabled] {
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.06);
+  }
 }
 
 .input--border, .select--border {
   background-color: transparent;
   border: 1px solid #e8e8e8;
+  &[disabled] {
+    border: 1px solid #e8e8e8 !important;
+  }
 }
 
 .input--dark, .select--dark {
@@ -56,6 +66,11 @@
   &:focus, &:hover {
     outline: none;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
+  }
+  &[disabled] {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+    cursor: not-allowed;
+    opacity: 0.5;
   }
 }
 
@@ -131,6 +146,16 @@
       &::before {
         background-color: #9ca76f;
         border-color: #9ca76f;
+      }
+    }
+    &[disabled] {
+      & + b {
+        color: rgba(35, 35, 35, 0.6);
+        cursor: not-allowed;
+        opacity: 0.5;
+        &::before {
+          border-color: #c6c6c6;
+        }
       }
     }
   }

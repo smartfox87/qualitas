@@ -9,27 +9,26 @@ $(function () {
   reloadPageBtn()
   duplicateBlocks()
   checkAllItemsInTable()
-  initCkeditor()
+  disableInputsForm()
 })
 
 $(window).on('load', function () {
   showPage()
 })
 
-function initCkeditor() {
-  if (CKEDITOR) {
-    CKEDITOR.replace('emails-message');
-  }
-}
-
 function toggleFadeMenu() {
   $('.js-user-menu').each(function () {
     const parent = $(this)
     const list = parent.find('.js-fade-menu')
     list.fadeOut()
-    parent.find('.js-fade-menu-toggle').click(function () {
+    parent.find('.js-fade-menu-toggle').click(function (event) {
+      event.stopPropagation()
       parent.toggleClass('active')
       list.fadeToggle()
+    })
+    $(document).click(function () {
+      parent.removeClass('active')
+      list.fadeOut()
     })
   })
 }
@@ -192,5 +191,16 @@ function initInputFile() {
 function reloadPageBtn() {
   $('.js-reload-page').click(function () {
     location.reload()
+  })
+}
+
+function disableInputsForm() {
+  $('.js-disabled-parent').each(function () {
+    const inputs = $(this).find('.js-disabled-input')
+    const toggler = $(this).find('.js-disabled-toggler')
+    inputs.prop('disabled', toggler.prop('checked'))
+    toggler.change(function () {
+      inputs.prop('disabled', $(this).prop('checked'))
+    })
   })
 }

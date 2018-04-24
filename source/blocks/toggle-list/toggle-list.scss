@@ -48,6 +48,37 @@
   }
 }
 
+.toggle-list--hover {
+  position: absolute;
+  top: -10px;
+  right: -50px;
+  .toggle-list__list {
+    top: 100%;
+    width: 0;
+    padding: 14px 24px;
+    opacity: 0;
+    transition: opacity 400ms;
+  }
+}
+
+.toggle-list__parent {
+  &:hover {
+    &::after {
+      opacity: 0;
+    }
+    .toggle-list__list {
+      display: block;
+      width: auto;
+      opacity: 1;
+    }
+    .toggle-list__toggle {
+      z-index: 860;
+      background-image: url("../img/arrow-top--min.png");
+      opacity: 0.6;
+    }
+  }
+}
+
 .toggle-list__toggle {
   position: relative;
   box-sizing: border-box;
