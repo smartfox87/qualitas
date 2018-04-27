@@ -96,6 +96,14 @@ html {
   border-top: 1px solid rgba(0, 0, 0, 0.3) !important;
 }
 
+.border-r-gray {
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.border-l-gray {
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 .mark-color {
   display: inline-block;
   position: relative;

@@ -12,6 +12,7 @@ $(function () {
   duplicateBlocks();
   checkAllItemsInTable();
   disableInputsForm();
+  toggleMultiPopup();
 });
 
 $(window).on('load', function () {
@@ -173,6 +174,32 @@ function openPopup() {
       event.preventDefault();
       popup.fadeIn(300).addClass('active');
     });
+  });
+}
+
+function toggleMultiPopup() {
+  $('.js-popup-parent').each(function () {
+    var _this3 = this;
+
+    var _loop = function _loop(i) {
+      var popup = $(_this3).find('.js-popup-' + i);
+      $(_this3).find('.js-open-popup-' + i).click(function (event) {
+        event.preventDefault();
+        popup.fadeIn(300).addClass('active');
+      });
+      popup.find('.js-close-popup').click(function () {
+        popup.fadeOut(0).removeClass('active');
+      });
+      $(window).keyup(function (event) {
+        if (event.keyCode === 27) {
+          popup.fadeOut(0).removeClass('active');
+        }
+      });
+    };
+
+    for (var i = 1; i < 10; i++) {
+      _loop(i);
+    }
   });
 }
 

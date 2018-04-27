@@ -83,6 +83,17 @@
   }
 }
 
+.table__row--flex {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  &:last-of-type {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
 .table__row--no-border {
   .table__cell {
     border-top: none;
@@ -173,6 +184,10 @@
   width: 7%;
 }
 
+.table__cell--75 {
+  width: 75%;
+}
+
 .table__cell--5 {
   width: 4.5%;
   padding-right: 20px !important;
@@ -226,6 +241,7 @@
 .table__link {
   color: #6f7fa7;
   text-decoration: underline;
+  cursor: pointer;
   opacity: 0.6;
   transition: 300ms;
   &:hover {

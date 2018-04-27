@@ -10,6 +10,7 @@ $(function () {
   duplicateBlocks()
   checkAllItemsInTable()
   disableInputsForm()
+  toggleMultiPopup()
 })
 
 $(window).on('load', function () {
@@ -175,6 +176,27 @@ function openPopup() {
       event.preventDefault()
       popup.fadeIn(300).addClass('active')
     })
+  })
+}
+
+function toggleMultiPopup() {
+  $('.js-popup-parent').each(function () {
+    for (let i = 1; i < 10; i++) {
+      const popup = $(this).find(`.js-popup-${i}`)
+      $(this).find(`.js-open-popup-${i}`).click(function (event) {
+        event.preventDefault()
+        popup.fadeIn(300).addClass('active')
+      })
+      popup.find('.js-close-popup').click(() => {
+        popup.fadeOut(0).removeClass('active')
+      })
+      $(window).keyup((event) => {
+        if (event.keyCode === 27) {
+          popup.fadeOut(0).removeClass('active')
+        }
+      })
+
+    }
   })
 }
 
