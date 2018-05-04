@@ -1,0 +1,27 @@
+.visualize {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.visualize-labels-x li span.line, .visualize-labels-y li span.line {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+  
+}
+
+.visualize-labels-y li span.label {
+  margin-top: -4px !important;
+  margin-right: 12px !important;
+}
+
+.visualize-labels-y li span.label,
+.visualize-labels-x li span.label {
+  font-family: Roboto !important;
+  font-size: 11px !important;
+  
+  color: rgba(35, 35, 35, 0.5) !important;
+}
+
+.visualize-labels-x li span.label {
+  margin-left: -8px !important;
+  margin-top: 12px !important;
+}

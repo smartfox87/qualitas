@@ -148,7 +148,7 @@ function initializeCalendar() {
 
 function showPage() {
   setTimeout(function () {
-    $('html').fadeIn();
+    $('html').css({ opacity: 1 });
   }, 400);
 }
 
@@ -226,6 +226,22 @@ function disableInputsForm() {
     inputs.prop('disabled', toggler.prop('checked'));
     toggler.change(function () {
       inputs.prop('disabled', $(this).prop('checked'));
+    });
+  });
+}
+
+function initCharts() {
+  $('.js-areachart').each(function () {
+    var widthParent = $(this).parents('.js-chart-parent').width();
+    $(this).hide().visualize({
+      type: 'area',
+      width: widthParent,
+      height: 250,
+      lineDots: 'double',
+      lineWeight: 3,
+      multiHover: 5,
+      appendTitle: false,
+      appendKey: false
     });
   });
 }

@@ -1,4 +1,16 @@
-<div class="content  content--horizontal  content--margin-bottom  border-b-green  border-t-green" style="background-color: #f9f9f9;">
-  <h3 class="content__caption">Select Folder</h3>
-  @@include("../form/form--my-documents.html")
+<div class="content  content--horizontal  content--margin-bottom  border-t-light  border-b-light"
+        style="background-color: #f9f9f9; padding: 25px;">
+  <div class="content__caption" style="display: flex; align-items: center;">
+    <div class="content__text  content__text--gray" style="padding-bottom: 0; padding-right: 10px; white-space:
+    nowrap;">
+      Select Folder
+    </div>
+    <label class="form__label" style="margin: 0;">
+      <select class="select  select--border  select--form  select--dark  form__select--short">
+        <option>Folder</option>
+        <option value=""></option>
+      </select>
+    </label>
+  </div>
+  @@include("../form/form--a-centre-management-documents-2.html")
 </div>

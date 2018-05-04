@@ -15,7 +15,7 @@
   outline: none;
   &::placeholder {
     font-size: 13px;
-    color: rgba(35, 35, 35, 0.3);
+    color: rgba(35, 35, 35, 0.5);
   }
   &[disabled] {
     cursor: not-allowed;
@@ -76,7 +76,7 @@
 
 .select {
   padding-right: 35px;
-  background: url("../img/arrow-down--light.png") no-repeat 304px center;
+  background: #ffffff url("../img/arrow-down--light.png") no-repeat 304px center;
   appearance: none;
 }
 

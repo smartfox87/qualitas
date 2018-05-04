@@ -20,7 +20,7 @@
 }
 
 html {
-  display: none;
+  opacity: 0;
   background: #d5d5d5 url("../img/bg__page.jpg") no-repeat center / cover;
   font-family: Roboto sans-serif;
   background-attachment: fixed;
@@ -90,6 +90,13 @@ html {
 
 .border-t-green {
   border-top: 1px solid rgba(0, 0, 0, 0.15) !important;
+}
+.border-b-light {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.border-t-light {
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
 .border-t-dark {

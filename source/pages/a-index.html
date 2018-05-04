@@ -16,14 +16,38 @@
       <div class="main-body__main">
         @@include("../blocks/main-nav/main-nav--a.html")
         <div class="main-body__content">
-          @@include("../blocks/breadcrumbs/breadcrumbs.html")
+          @@include("../blocks/breadcrumbs/breadcrumbs--a.html")
           <div class="grid-container">
+            <div class="grid-item  grid-item--1">
+              @@include("../blocks/content/content--a-1.html")
+            </div>
+            <div class="grid-item  grid-item--1">
+              @@include("../blocks/content/content--a-2.html")
+            </div>
+            <div class="grid-item  grid-item--1">
+              @@include("../blocks/content/content--a-3.html")
+            </div>
+            <div class="grid-item  grid-item--1">
+              @@include("../blocks/content/content--a-4.html")
+            </div>
             <div class="grid-item  grid-item--2">
+              @@include("../blocks/content/content--a-5.html")
+            </div>
+            <div class="grid-item  grid-item--2">
+              @@include("../blocks/content/content--a-6.html")
+            </div>
+            <div class="grid-item  grid-item--4">
+              @@include("../blocks/content/content--a-7.html")
             </div>
           </div>
         </div>
       </div>
     </div>
     <script src="js/script.min.js"></script>
+    <script src="https://qualitas.focusawards.org.uk/assets/js/plugins/visualize/visualize.jQuery.js"></script>
+    <script>
+      $(window).on('load', function () {
+        initCharts()
+      })</script>
   </body>
 </html>
