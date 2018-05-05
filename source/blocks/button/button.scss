@@ -103,10 +103,12 @@
 
 .button--green {
   color: #ffffff;
-  background-color: rgba(137, 150, 110, 0.8);
+  background-color: rgb(161,171,139);
+  border-color: rgb(161,171,139);
   &:hover {
     color: #ffffff;
     background-color: rgba(137, 150, 110, 1);
+    border-color: rgba(137, 150, 110, 1);
   }
 }
 

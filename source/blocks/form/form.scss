@@ -276,6 +276,10 @@
   background-position: 183px center !important;
 }
 
+.form__input--auto, .form__textarea--auto {
+  width: 100% !important;
+}
+
 .form__select--min, .form__input--min {
   width: 113px !important;
   background-position: 82px center !important;

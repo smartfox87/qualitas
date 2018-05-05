@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qualitais</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="main-body">
+    <div class="main-body__wrapper">
+      <div class="main-body__header">
+        @@include("../blocks/main-header/main-header-a.html")
+      </div>
+      <div class="main-body__main">
+        @@include("../blocks/main-nav/main-nav--a-corporate-business-continuity.html")
+        <div class="main-body__content">
+          @@include("../blocks/breadcrumbs/breadcrumbs--a-corporate-business-continuity.html")
+          <div class="grid-container">
+            <div class="grid-item  grid-item--4">
+              @@include("../blocks/content/content--a-corporate-business-continuity.html")
+            </div>
+            <div class="grid-item  grid-item--4">
+              <h1 class="breadcrumbs__title" style="margin-bottom: 20px;">Key external contact details</h1>
+              @@include("../blocks/content/content--a-corporate-business-continuity-2.html")
+              @@include("../blocks/content/content--a-corporate-business-continuity-3.html")
+              @@include("../blocks/content/content--a-corporate-business-continuity-4.html")
+              @@include("../blocks/content/content--a-corporate-business-continuity-5.html")
+              @@include("../blocks/content/content--a-corporate-business-continuity-6.html")
+              <div style="display: flex; justify-content: center;">
+                <button class="button" type="submit" style="margin-right: 8px;">Submit</button>
+                <a class="button  button--green" href="#">Download PDF</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

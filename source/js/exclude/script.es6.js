@@ -11,6 +11,7 @@ $(function () {
   checkAllItemsInTable()
   disableInputsForm()
   toggleMultiPopup()
+  hideBigText()
 })
 
 $(window).on('load', function () {
@@ -176,6 +177,13 @@ function openPopup() {
       event.preventDefault()
       popup.fadeIn(300).addClass('active')
     })
+  })
+}
+
+function hideBigText() {
+  $('.js-text-toggler').click(function (event) {
+    event.preventDefault()
+    $(this).parents('.js-text-parent').toggleClass('active')
   })
 }
 

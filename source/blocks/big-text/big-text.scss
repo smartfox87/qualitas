@@ -1,0 +1,25 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.big-text {
+  &.active {
+    .big-text__content {
+      height: auto;
+    }
+    .big-text__button-opened {
+      display: inline;
+    }
+    .big-text__button-closed {
+      display: none;
+    }
+  }
+}
+
+.big-text__content {
+  height: 1.5em;
+  overflow: hidden;
+}
+
+.big-text__button-opened {
+  display: none;
+}

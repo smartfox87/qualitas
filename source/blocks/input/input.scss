@@ -74,6 +74,10 @@
   }
 }
 
+.textarea--no-shadow {
+  box-shadow: none !important;
+}
+
 .select {
   padding-right: 35px;
   background: #ffffff url("../img/arrow-down--light.png") no-repeat 304px center;
