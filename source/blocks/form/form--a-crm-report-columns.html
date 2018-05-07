@@ -1,5 +1,48 @@
-<form class="form  form--mid">
-  <div class="form__buttons">
+<form class="form  form--horizontal  js-opt-select-parent" style="flex-wrap: wrap; align-items: flex-start; width:
+100%;">
+  <div class="js-opt-select-coll" style="display: flex; align-items: flex-start;">
+    <select
+            class="form__select  js-opt-select  select  select--border  select--dark  select--form  select--shadow  select--opened"
+            multiple>
+      <option value="id">Id</option>
+      <option value="subscriber_id">Subscriber Id</option>
+      <option value="name_prefix">Name Prefix</option>
+      <option value="phone">Phone</option>
+      <option value="mobile">Mobile</option>
+      <option value="website">Website</option>
+      <option value="industry_id">Industry Id</option>
+      <option value="call_follow_up_id">Call Follow Up Id</option>
+      <option value="qcf_fqp">Qcf Fqp</option>
+      <option value="future_action_id">Future Action Id</option>
+      <option value="modify_by">Modify By</option>
+      <option value="secondry_email">Secondry Email</option>
+      <option value="street">Street</option>
+      <option value="city">City</option>
+      <option value="postal_code">Postal Code</option>
+      <option value="status">Status</option>
+      <option value="modify_date">Modify Date</option>
+      <option value="lido">Lido</option>
+    </select>
+    <button class="button  button--green  js-opt-select-btn" style="margin-left: 20px;">Add</button>
+  </div>
+  <div class="js-opt-select-coll" style="margin-left: auto; display: flex; align-items: flex-start;">
+    <select
+            class="form__select  js-opt-select  select  select--border  select--dark  select--form  select--shadow  select--opened"
+            multiple>
+      <option value="email">Email</option>
+      <option value="first_name">First Name</option>
+      <option value="last_name">Last Name</option>
+      <option value="leads_source_id">Leads Source Id</option>
+      <option value="leads_status_id">Leads Status Id</option>
+      <option value="description">Description</option>
+      <option value="add_date">Add Date</option>
+      <option value="leads_owner">Leads Owner</option>
+      <option value="company">Company</option>
+    </select>
+    <button class="button  button--red-fill  js-opt-select-btn" style="margin: 0 20px;">Remove</button>
+  </div>
+  <div class="form__buttons  form__buttons--center  border-t-light"
+          style="width: 100%; margin-top: 30px; padding-top: 50px;">
     <button class="button  form__btn" type="submit">Submit</button>
   </div>
 </form>

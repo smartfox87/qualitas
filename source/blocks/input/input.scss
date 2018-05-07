@@ -84,6 +84,16 @@
   appearance: none;
 }
 
+.select--opened {
+  height: auto;
+  padding: 12px 15px;
+  overflow-y: visible;
+  background: #ffffff;
+  option {
+    padding: 5px;
+  }
+}
+
 .input--form, .textarea--form, .select--form {
   &:focus, &:hover {
     border: 1px solid #b5bfd6;

@@ -1,0 +1,161 @@
+<form class="form  form--mid-2  js-dublicate-parent">
+  <div class="form__row" style="justify-content: flex-start;">
+    <label class="form__label">
+      <span>Start Date</span>
+      <input class="input  input--border  input--form  input--shadow  input--dark  js-datepicker"
+              style="width: 215px;" type="text">
+    </label>
+    <label class="form__label">
+      <span style="width: 150px;">End Date</span>
+      <input class="input  input--border  input--form  input--shadow  input--dark  js-datepicker"
+              style="width: 215px;" type="text">
+    </label>
+  </div>
+  <div class="form__label">
+    <span></span>
+    <label class="form__checkbox  checkbox">
+      <input type="checkbox">
+      <b>Notes Download</b>
+    </label>
+  </div>
+  <div class="form__row  js-dublicate-item" style="justify-content: flex-start; align-items: center;">
+    <label class="form__label" style="margin: 0;">
+      <span>Advanced Filter</span>
+      <select class="select  select--border  select--form  select--shadow  select--dark  form__select--short">
+        <option value="">None</option>
+        <option value="leads_owner" data-type="text">Leads Owner</option>
+        <option value="first_name" data-type="text">First Name</option>
+        <option value="last_name" data-type="text">Last Name</option>
+        <option value="company" data-type="text">Company</option>
+        <option value="email" data-type="text">Email</option>
+        <option value="leads_source_id" data-type="select">Leads Source Id</option>
+        <option value="leads_status_id" data-type="select">Leads Status Id</option>
+        <option value="future_action_id" data-type="select">Future Action Id</option>
+        <option value="industry_id" data-type="select">Industry Id</option>
+        <option value="call_follow_up_id" data-type="select">Call Follow Up Id</option>
+      </select>
+    </label>
+    <input class="input  input--border  input--form  input--shadow  input--dark" type="text"
+            style="margin-left: 15px; width: 350px;">
+    <button class="button  form__btn  button--red-fill  button--icon  button--icon-del  js-dublicate-delete"
+            style="margin-left: 15px;">
+      Delete
+    </button>
+  </div>
+  <div class="form__row  js-dublicate-item" style="justify-content: flex-start; align-items: center; display: none;">
+    <label class="form__label" style="margin: 0;">
+      <span>Advanced Filter</span>
+      <select class="select  select--border  select--form  select--shadow  select--dark  form__select--short">
+        <option value="">None</option>
+        <option value="leads_owner" data-type="text">Leads Owner</option>
+        <option value="first_name" data-type="text">First Name</option>
+        <option value="last_name" data-type="text">Last Name</option>
+        <option value="company" data-type="text">Company</option>
+        <option value="email" data-type="text">Email</option>
+        <option value="leads_source_id" data-type="select">Leads Source Id</option>
+        <option value="leads_status_id" data-type="select">Leads Status Id</option>
+        <option value="future_action_id" data-type="select">Future Action Id</option>
+        <option value="industry_id" data-type="select">Industry Id</option>
+        <option value="call_follow_up_id" data-type="select">Call Follow Up Id</option>
+      </select>
+    </label>
+    <input class="input  input--border  input--form  input--shadow  input--dark" type="text"
+            style="margin-left: 15px; width: 350px;">
+    <button class="button  form__btn  button--red-fill  button--icon  button--icon-del  js-dublicate-delete"
+            style="margin-left: 15px;">
+      Delete
+    </button>
+  </div>
+  <div class="form__buttons  border-b-light" style="margin-top: 0; margin-bottom: 30px; padding-bottom: 25px;">
+    <button class="button  form__btn  button--icon  button--green  js-dublicate-add">Add</button>
+  </div>
+  <div class="form__row" style="justify-content: flex-start;">
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select"
+            style="margin-right: 15px;">
+      <option value="1">Appointment Made</option>
+      <option value="2">Contacted</option>
+      <option value="3">Message and mobile number left</option>
+      <option value="4">Contacted - name not available. Reappoint.</option>
+      <option value="5">Contact when new quals available</option>
+      <option value="6">Attempted to Contact</option>
+      <option value="7">Contact in Future</option>
+      <option value="8">Contacted by Email Only - Follow Up</option>
+      <option value="9">Telesales Only - Follow Up</option>
+      <option value="10">Not Contacted</option>
+      <option value="11">Junk Lead, multiple attempts to contact</option>
+      <option value="12">Junk Lead, blown out</option>
+      <option value="13">Centre Approval Forms Sent</option>
+      <option value="14">Approved as Focus Awards Centre</option>
+    </select>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select"
+            style="margin-right: 15px;">
+      <option value="1">Call back - message left</option>
+      <option value="2">Call back when qual available</option>
+      <option value="3">Email when qual available</option>
+      <option value="4">Call back in the future - see notes for details</option>
+      <option value="5">Send more information</option>
+      <option value="6">Send Centre Approval Forms</option>
+      <option value="7">Send Support Letter Request</option>
+      <option value="8">Reappoint</option>
+      <option value="9">Discuss with Qual Dev</option>
+      <option value="10">Discuss with CEO</option>
+      <option value="11">Chase up forms.....</option>
+      <option value="12">Follow up call required - setup reminder</option>
+      <option value="13">Return to Cactus for Reappoint</option>
+    </select>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select--short">
+      <option value="1">Telesales - Cactus Sales</option>
+      <option value="2">Telesales - NJA</option>
+      <option value="3">Telesales In-house</option>
+      <option value="4">Advertisement</option>
+      <option value="5">Cold Call</option>
+      <option value="6">Employee Referral</option>
+      <option value="7">External Referral</option>
+      <option value="8">Trade Show</option>
+      <option value="9">Web Download</option>
+      <option value="10">Web Research</option>
+      <option value="11">Chat</option>
+      <option value="12">Telesales BMS</option>
+      <option value="13">Direct Mail</option>
+      <option value="14">Direct Email Campaign</option>
+      <option value="15">Focus Webform</option>
+      <option value="16">Unsolicited Call-in</option>
+    </select>
+  </div>
+  <div class="form__row" style="justify-content: flex-start;">
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select"
+            style="margin-right: 15px;">
+      <option value="2">Sports, Leisure and Recreation</option>
+      <option value="3">Child Development and Well Being</option>
+      <option value="4">Direct Learning Support</option>
+      <option value="5">Teaching and Lecturing</option>
+      <option value="6">Service Enterprises</option>
+      <option value="7">Preparation for Work</option>
+      <option value="8">Administration</option>
+      <option value="9">All</option>
+      <option value="10">Apprenticeships</option>
+      <option value="11">Traineeships</option>
+      <option value="14">Transportation Operations and Maintenance</option>
+    </select>
+    <select class="select  select--border  select--form  select--shadow  select--dark  form__select">
+      <option value="1">Unable to make contact</option>
+      <option value="2">Sector not accredited for</option>
+      <option value="3">Qualifications not offered</option>
+      <option value="4">Satisfied with current provider</option>
+      <option value="5">Too new - credibility, reputation</option>
+      <option value="6">Never heard of Focus Awards</option>
+      <option value="7">Already use too many AOs</option>
+      <option value="8">Don\'t want to change</option>
+      <option value="9">Want to speak to current client</option>
+      <option value="10">Visited website - quals not listed</option>
+      <option value="11">Very small, no opportunity</option>
+      <option value="12">Courses are free, no revenue available</option>
+      <option value="13">No Show, Attempt to Call Back Later</option>
+      <option value="14">No Show - Back to Cactus</option>
+      <option value="17">Meeting</option>
+    </select>
+  </div>
+  <div class="form__buttons">
+    <button class="button  form__btn" type="submit">Submit</button>
+  </div>
+</form>

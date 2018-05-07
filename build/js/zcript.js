@@ -14,11 +14,48 @@ $(function () {
   disableInputsForm();
   toggleMultiPopup();
   hideBigText();
+  toggleOptionSelects();
 });
 
 $(window).on('load', function () {
   showPage();
+  initDatepicker();
 });
+
+function toggleOptionSelects() {
+  $('.js-opt-select-parent').each(function () {
+    $(this).find('.js-opt-select-coll').each(function () {
+      var select = $(this).find('.js-opt-select');
+      var allOptions = select[0].options;
+      var button = $(this).find('.js-opt-select-btn');
+      var siblingSelect = $(this).siblings().first().find('.js-opt-select');
+      select.attr('size', allOptions.length);
+      button.click(function (event) {
+        event.preventDefault();
+        for (var i = 0; i < allOptions.length; i++) {
+          if (allOptions[i].selected) {
+            siblingSelect.append(allOptions[i]);
+            $('.js-opt-select-coll').each(function () {
+              var select = $(this).find('.js-opt-select');
+              var allOptions = select[0].options;
+              select.attr('size', allOptions.length);
+            });
+          }
+        }
+      });
+    });
+  });
+}
+
+function initDatepicker() {
+  if (jQuery.fn.datepicker) {
+    console.log('w');
+    $('.js-datepicker').datepicker({
+      orientation: 'top left',
+      autoclose: true
+    });
+  }
+}
 
 function toggleFadeMenu() {
   $('.js-user-menu').each(function () {
@@ -70,7 +107,6 @@ function checkAllItemsInTable() {
   });
 }
 
-//************************ main-nav **********************
 function toggleAccordion() {
   $('.js-accordion').each(function () {
     var items = $(this).find('.js-accordion-item');
