@@ -247,3 +247,10 @@
   color: rgba(0, 0, 0, 0.6);
   border-right: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+.content__btn {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}

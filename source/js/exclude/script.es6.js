@@ -47,7 +47,6 @@ function toggleOptionSelects() {
 
 function initDatepicker() {
   if (jQuery.fn.datepicker) {
-    console.log('w')
     $('.js-datepicker').datepicker({
       orientation: 'top left',
       autoclose: true
