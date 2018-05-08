@@ -1,4 +1,4 @@
-<button class="button  button--green  content__btn">Contact reason</button>
+<button class="button  button--green  content__btn  js-open-popup-1">Contact reason</button>
 <div class="content__header  content__header--flex" style="padding-bottom: 20px;">
   <div class="content__text  content__text--dark" style="padding: 14px 0 0;">
     Ticket importance:
@@ -7,7 +7,7 @@
     <span class="mark-color  mark-color--blue">Low</span>
   </div>
   <button class="button  button--green" style="margin-left: auto; margin-right: 8px;">VIEW CLOSED TICKET</button>
-  <button class="button">Add new TICKET</button>
+  <button class="button  js-open-popup-2">Add new TICKET</button>
 </div>
 <div class="content  content--big-table  block-shadow">
   <div class="content__header">
@@ -17,5 +17,7 @@
   </div>
   <div class="content__body  content__body--toggle">
     @@include("../table/table--a-ticket-system.html")
+    @@include("../popup/popup--a-ticket-system.html")
+    @@include("../popup/popup--a-ticket-system-2.html")
   </div>
 </div>
