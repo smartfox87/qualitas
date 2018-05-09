@@ -350,3 +350,44 @@
   margin-top: 10px;
   margin-left: 32px;
 }
+
+.table__signal-str {
+  width: 54px;
+  height: 28px;
+}
+
+.table__strength1 {
+  background-image: url(../img/strength1.png)
+}
+
+.table__strength2 {
+  background-image: url(../img/strength2.png)
+}
+
+.table__strength3 {
+  background-image: url(../img/strength3.png)
+}
+
+.table__strength4 {
+  background-image: url(../img/strength4.png)
+}
+
+.table__strength5 {
+  background-image: url(../img/strength5.png)
+}
+
+.table__tasks-link {
+  color: #7b89ad;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.95;
+  font-size: 13px;
+  transition: 300ms;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.table--big .table__cell-fz13 {
+  font-size: 13px;
+}
