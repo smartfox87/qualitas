@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qualitais</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="main-body">
+    <div class="main-body__wrapper">
+      <div class="main-body__header">
+        @@include("../blocks/main-header/main-header-u.html")
+      </div>
+      <div class="main-body__main">
+        @@include("../blocks/main-nav/main-nav--u.html")
+        <div class="main-body__content">
+          @@include("../blocks/breadcrumbs/breadcrumbs--u-dashboard.html")
+          <div class="grid-container">
+            <div class="grid-item  grid-item--4">
+              @@include("../blocks/content/content--u-dashboard-tasks.html")
+            </div>
+            <div class="grid-item  grid-item--4">
+            	@@include("../blocks/table-tools/table-tools--u-dashboard.html")
+              @@include("../blocks/content/content--u-dashboard.html")
+              @@include("../blocks/pagination/pagination.html")
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
