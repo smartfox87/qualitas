@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qualitais</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://qualitas.focusawards.org.uk/newassets/plugins/ckeditor/ckeditor.js" defer></script>
   </head>
   <body class="main-body">
     <div class="main-body__wrapper">
@@ -14,20 +15,24 @@
         @@include("../blocks/main-header/main-header-a.html")
       </div>
       <div class="main-body__main">
-        @@include("../blocks/main-nav/main-nav--a-admin-manage-focus-staff.html")
+        @@include("../blocks/main-nav/main-nav--a-none.html")
         <div class="main-body__content">
-          @@include("../blocks/breadcrumbs/breadcrumbs--a-admin-manage-focus-staff.html")
+          @@include("../blocks/breadcrumbs/breadcrumbs--a-ticket-system-view.html")
           <div class="grid-container">
-            <div class="grid-item  grid-item--4">
-              @@include("../blocks/content/content--a-admin-manage-focus-staff.html")
+            <div class="grid-item  grid-item--4" style="margin-bottom: 2%;">
+              @@include("../blocks/content/content--a-ticket-system-view.html")
             </div>
-            <div class="grid-item  grid-item--4">
-              @@include("../blocks/content/content--a-admin-manage-focus-staff-2.html")
+            <div class="grid-item  grid-item--4  js-popup-parent">
+              @@include("../blocks/content/content--a-ticket-system-view-2.html")
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/script.min.js"></script>
+    <script defer src="js/script.min.js"></script>
+    <script defer>
+    window.addEventListener('load', function () {
+      CKEDITOR.replace('emails-message');
+    })</script>
   </body>
 </html>
