@@ -1,9 +1,48 @@
-<div class="content  content--big-table  block-shadow  content--margin-bottom">
+<div class="content  content--big-table  block-shadow  content--margin-bottom  content--padding-bottom">
   <div class="content__header">
-    <h3 class="content__title">Focus Awards Centre support</h3>
+    <h3 class="content__title">Focus Awards Freelancers EQA</h3>
   </div>
   <div class="content__body  content__body--form">
-    @@include("../form/form--a-admin-manage-focus-staff-add-1.html")
+    <form class="form  form--big">
+      <label class="form__label">
+        <span>Title*</span>
+        <select
+                class="select  select--border  select--form  select--shadow  select--dark  form__select--short  form__select  js-disabled-input">
+          <option></option>
+          <option value="Mr" selected="selected">Mr</option>
+
+          <option value="Mrs">Mrs</option>
+
+          <option value="Miss">Miss</option>
+
+          <option value="Ms">Ms</option>
+
+          <option value="Dr">Dr</option>
+
+          <option value="Prof">Prof</option>
+
+          <option value="Rev">Rev</option>
+        </select>
+      </label>
+      <label class="form__label">
+        <span>First Name*</span>
+        <input class="input  input--border  input--form  input--shadow  input--dark  form__input  js-disabled-input"
+                type="text" required>
+      </label>
+      <label class="form__label">
+        <span>Last Name*</span>
+        <input class="input  input--border  input--form  input--shadow  input--dark  form__input  js-disabled-input"
+                type="text" required>
+      </label>
+      <label class="form__label">
+        <span>Preferred email*</span>
+        <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="email">
+      </label>
+      <label class="form__label">
+        <span>Mobile</span>
+        <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
+      </label>
+    </form>
   </div>
   <div class="content__header">
     <h3 class="content__title  content__title--bold">Address Details</h3>
@@ -493,6 +532,13 @@
         <span>Postcode</span>
         <input class="input  input--border  input--form  input--shadow  input--dark  form__input" type="text">
       </label>
+      <div class="form__label  form__label--file">
+        <span>CV/Document (Zip Only)</span>
+        <div class="js-parent-file">
+          <button class="button  button--light  button--middle  js-button-file">Select file</button>
+          <input class="input  input--file  js-input-file" type="file">
+        </div>
+      </div>
     </form>
   </div>
   <div class="content__header">
@@ -501,26 +547,17 @@
   <div class="content__body  content__body--form">
     <form class="form  form--big">
       <label class="form__label">
-        <span>Username*</span>
-        <input class="input  input--border  input--form  input--shadow  input--dark  form__input  js-disabled-input"
-                type="text" required>
+        <span>Qualification</span>
+        <div class="search  form__textarea">
+          <ul>
+          </ul>
+          <input class="input  input--border  input--form  input--dark  form__input--auto">
+        </div>
       </label>
-      <label class="form__label">
-        <span>Password*</span>
-        <input class="input  input--border  input--form  input--shadow  input--dark  form__input  js-disabled-input"
-                type="text" required>
-      </label>
-      <div class="form__label">
-        <span></span>
-        <label class="form__checkbox  checkbox">
-          <input class="js-disabled-input" type="checkbox">
-          <b>Send welcome email</b>
-        </label>
-      </div>
     </form>
   </div>
-</div>
-<div class="form__buttons  form__buttons--center">
-  <button class="button  form__btn" type="submit">Ok</button>
-  <button class="button  button--white  form__btn" type="button">Cancel</button>
+  <div class="form__buttons  form__buttons--center">
+    <button class="button  form__btn" type="submit">Ok</button>
+    <button class="button  button--white  form__btn  js-close-popup" type="button">Cancel</button>
+  </div>
 </div>
