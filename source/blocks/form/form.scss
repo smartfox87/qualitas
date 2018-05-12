@@ -174,6 +174,10 @@
   }
 }
 
+.form__label--center-top {
+  align-items: flex-start;
+}
+
 .form__label--ckeditor {
   display: flex;
   align-items: center;
@@ -267,6 +271,11 @@
   display: block;
 }
 
+.form__radio-box-line {
+	display: flex;
+	margin-top: 10px;
+}
+
 .form__input, .form__textarea, .form__select {
   width: 335px;
 }
@@ -323,4 +332,21 @@
 .form__checkbox-box {
   display: flex;
   flex-direction: column;
+}
+
+.form--big--wide {
+  .form__label {
+    span {
+      width: 450px;
+    }
+  }
+  .form__input, .form__textarea, .form__select {
+    width: 600px;
+  }
+  .form__buttons {
+    padding-left: 25px;
+  }
+  .form__select {
+    background-position: 565px center;
+  }
 }
