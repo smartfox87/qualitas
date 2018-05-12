@@ -13,13 +13,15 @@
       <div class="main-body__header">
         @@include("../blocks/main-header/main-header-u.html")
       </div>
-      <div class="main-body__main">
+      <div class="main-body__main  js-popup-parent">
         @@include("../blocks/main-nav/main-nav--u.html")
         <div class="main-body__content">
           @@include("../blocks/breadcrumbs/breadcrumbs--u-dashboard-general-tasks.html")
           <div class="grid-container">
             <div class="grid-item  grid-item--4">
               @@include("../blocks/content/content--u-dashboard-general-tasks.html")
+              @@include("../blocks/popup/popup--u-announcements.html")
+              @@include("../blocks/popup/popup--u-resources.html")
             </div>
           </div>
         </div>
