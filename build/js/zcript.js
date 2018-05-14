@@ -15,12 +15,23 @@ $(function () {
   toggleMultiPopup();
   hideBigText();
   toggleOptionSelects();
+  deleteItem();
+  initAutoHeightTextarea();
 });
 
 $(window).on('load', function () {
   showPage();
   initDatepicker();
 });
+
+function deleteItem() {
+  $('.js-delete-btn').each(function () {
+    $(this).click(function (event) {
+      event.preventDefault();
+      $(this).parents('.js-delete-parent').remove();
+    });
+  });
+}
 
 function toggleOptionSelects() {
   $('.js-opt-select-parent').each(function () {
@@ -286,5 +297,12 @@ function initCharts() {
       appendTitle: false,
       appendKey: false
     });
+  });
+}
+
+function initAutoHeightTextarea() {
+  $('.js-textarea-auto').each(function () {
+    var scroll = $(this).prop('scrollHeight');
+    $(this).height(scroll - 18);
   });
 }
