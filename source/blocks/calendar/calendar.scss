@@ -175,11 +175,11 @@
 	}
 	.fc .fc-toolbar>*>:last-child {
     width: 100%;
-		color: #666666;
-    font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    letter-spacing: -1px;
 		font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+		color: #666666;
+    letter-spacing: -1px;
 	}
 	.fc-right {
 		order: 0;
@@ -198,8 +198,8 @@
 		order: 3;
 	}
 	.fc-month-button {
-		margin-left: auto;
 		order: 4;
+		margin-left: auto;
 	}
 	.fc-agendaWeek-button {
 		order: 5;
