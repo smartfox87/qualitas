@@ -9,155 +9,202 @@
   background: #ffffff;
 }
 
-.fc-toolbar.fc-header-toolbar {
-  box-sizing: border-box;
-  margin: 0;
-  padding-bottom: 20px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.fc-head {
-  display: none;
-}
-
-.fc-toolbar .fc-left {
-  position: relative;
-  padding-top: 42px;
-  &::before {
-    content: 'Calendar';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 64px;
-    height: 12px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1;
-    color: black;
-    opacity: 0.6;
+.calendar-wrap {
+  .fc-toolbar.fc-header-toolbar {
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   }
-}
-
-.fc-toolbar h2 {
-  font-weight: 400;
-  font-size: 23px;
-  line-height: 1;
-  color: rgba(111, 127, 167, 0.4);
-}
-
-.fc .fc-button-group {
-  position: relative;
-  button {
-    height: auto;
-    margin: 0 0 0 20px;
-    padding: 0 0 14px;
-    font-size: 14px;
-    line-height: 14px;
-    color: #d4cece;
+  
+  .fc-head {
+    display: none;
+  }
+  
+  .fc-toolbar .fc-left {
+    position: relative;
+    padding-top: 42px;
+    &::before {
+      content: 'Calendar';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 64px;
+      height: 12px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      color: black;
+      opacity: 0.6;
+    }
+  }
+  
+  .fc-toolbar h2 {
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 1;
+    color: rgba(111, 127, 167, 0.4);
+  }
+  
+  .fc .fc-button-group {
+    position: relative;
+    button {
+      height: auto;
+      margin: 0 0 0 20px;
+      padding: 0 0 14px;
+      font-size: 14px;
+      line-height: 14px;
+      color: #d4cece;
+      background: none;
+      border: none;
+      border-bottom: 5px solid #ffffff;
+      outline: none;
+      box-shadow: none;
+      transition: 300ms;
+      &.fc-state-active, &:hover {
+        color: #7b89ad;
+        border-bottom-color: #6f7fa7;
+      }
+      &:disabled {
+        color: #cccccc;
+      }
+      &.fc-prev-button, &.fc-next-button {
+        position: absolute;
+        right: 0;
+        bottom: -27px;
+        width: 20px;
+        height: 20px;
+        margin: 0;
+        padding: 0;
+        background: url("../img/arrow-right.png") no-repeat right top / contain;
+        border: none;
+        opacity: 0.66;
+        &:hover {
+          opacity: 1;
+        }
+        span {
+          display: none;
+        }
+      }
+      &.fc-prev-button {
+        right: 20px;
+        background: url("../img/arrow-left.png") no-repeat left top / contain;
+      }
+    }
+  }
+  
+  .fc-view-container {
+    padding: 15px 33px 0 25px;
+    .fc-widget-content {
+      border: none;
+    }
+  }
+  
+  .fc-scroller.fc-day-grid-container {
+    height: 260px !important;
+  }
+  
+  .fc-basic-view .fc-body .fc-row {
+    height: 44px !important;
+    padding: 3px 0;
+  }
+  
+  .fc-unthemed .fc-disabled-day {
+    background: none;
+  }
+  
+  .fc-unthemed td.fc-today {
     background: none;
     border: none;
-    border-bottom: 5px solid #ffffff;
-    outline: none;
-    box-shadow: none;
-    transition: 300ms;
-    &.fc-state-active, &:hover {
-      color: #7b89ad;
-      border-bottom-color: #6f7fa7;
+    span {
+      border: 1px solid rgba(123, 137, 173, 0.2);
     }
-    &:disabled {
-      color: #cccccc;
+  }
+  
+  .fc-row .fc-content-skeleton {
+    position: absolute;
+    padding: 0;
+    tbody {
+      .fc-event-container {
+        position: relative;
+      }
     }
-    &.fc-prev-button, &.fc-next-button {
+    .fc-event {
       position: absolute;
-      right: 0;
-      bottom: -27px;
-      width: 20px;
-      height: 20px;
+      top: -12px;
+      left: 29px;
+      width: 7px;
+      height: 7px;
       margin: 0;
       padding: 0;
-      background: url("../img/arrow-right.png") no-repeat right top / contain;
+      font-size: 0;
+      background-color: #7b89ad;
       border: none;
-      opacity: 0.66;
-      &:hover {
-        opacity: 1;
-      }
-      span {
-        display: none;
-      }
-    }
-    &.fc-prev-button {
-      right: 20px;
-      background: url("../img/arrow-left.png") no-repeat left top / contain;
+      border-radius: 50%;
     }
   }
-}
-
-.fc-view-container {
-  padding: 15px 33px 0 25px;
-  .fc-widget-content {
-    border: none;
-  }
-}
-
-.fc-scroller.fc-day-grid-container {
-  height: 260px !important;
-}
-
-.fc-basic-view .fc-body .fc-row {
-  height: 44px !important;
-  padding: 3px 0;
-}
-
-.fc-unthemed .fc-disabled-day {
-  background: none;
-}
-
-.fc-unthemed td.fc-today {
-  background: none;
-  border: none;
-  span {
-    border: 1px solid rgba(123, 137, 173, 0.2);
-  }
-}
-
-.fc-row .fc-content-skeleton {
-  position: absolute;
-  padding: 0;
-  tbody {
-    .fc-event-container {
-      position: relative;
-    }
-  }
-  .fc-event {
-    position: absolute;
-    top: -12px;
-    left: 29px;
-    width: 7px;
-    height: 7px;
-    margin: 0;
+  
+  .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    position: relative;
+    right: 6px;
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
     padding: 0;
-    font-size: 0;
-    background-color: #7b89ad;
-    border: none;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      background: rgba(123, 137, 173, 0.2);
+    }
   }
 }
 
-.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
-  position: relative;
-  right: 6px;
-  box-sizing: border-box;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  font-size: 16px;
-  line-height: 44px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 300ms;
-  &:hover {
-    background: rgba(123, 137, 173, 0.2);
-  }
+.calendar-diary-wrap {
+	.fc-toolbar {
+		display: flex;
+		flex-direction: column;
+	}
+	.fc-left {
+		order: 1;
+		width: 100;
+	}
+	.fc .fc-toolbar>*>:last-child {
+    width: 100%;
+    font-weight: 200;
+		font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+		color: #666666;
+    letter-spacing: -1px;
+	}
+	.fc-right {
+		order: 0;
+	}
+	.fc-button-group {
+		display: flex;
+		width: 100%;
+	}
+	.fc-prev-button {
+		order: 1;
+	}
+	.fc-next-button {
+		order: 2;
+	}
+	.fc-today-button {
+		order: 3;
+	}
+	.fc-month-button {
+		order: 4;
+		margin-left: auto;
+	}
+	.fc-agendaWeek-button {
+		order: 5;
+	}
+	.fc-agendaDay-button {
+		order: 6;
+	}
 }
