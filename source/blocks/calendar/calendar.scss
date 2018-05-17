@@ -162,4 +162,68 @@
       background: rgba(123, 137, 173, 0.2);
     }
   }
+  
+  .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    position: relative;
+    right: 6px;
+    box-sizing: border-box;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      background: rgba(123, 137, 173, 0.2);
+    }
+  }
+}
+
+.calendar-diary-wrap {
+  .fc-toolbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .fc-left {
+    order: 1;
+    width: 100px;
+  }
+  .fc .fc-toolbar > * > :last-child {
+    width: 100%;
+    font-weight: 200;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #666666;
+    letter-spacing: -1px;
+  }
+  .fc-right {
+    order: 0;
+  }
+  .fc-button-group {
+    display: flex;
+    width: 100%;
+  }
+  .fc-prev-button {
+    order: 1;
+  }
+  .fc-next-button {
+    order: 2;
+  }
+  .fc-today-button {
+    order: 3;
+  }
+  .fc-month-button {
+    order: 4;
+    margin-left: auto;
+  }
+  .fc-agendaWeek-button {
+    order: 5;
+  }
+  .fc-agendaDay-button {
+    order: 6;
+  }
 }

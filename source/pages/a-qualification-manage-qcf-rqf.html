@@ -18,17 +18,26 @@
         <div class="main-body__content">
           @@include("../blocks/breadcrumbs/breadcrumbs--a-qualification-manage-qcf-rqf.html")
           <div class="grid-container">
-            <div class="grid-item  grid-item--4">
+            <div class="grid-item  grid-item--4  js-popup-parent">
               <div style="margin-bottom: 40px; display: flex; justify-content: flex-end;">
-                <a href="#" class="button  button--icon  content__btn">Add Sector</a>
-                <a href="#" class="button  button--blue  content__btn">Edit Sector</a>
-                <a href="#" class="button  button--icon  content__btn">Add Qualifications</a>
-                <a href="#" class="button  button--red-fill  content__btn">Manage Unit Bank</a>
-                <a href="#" class="button  button--green  content__btn">Qualification Development Template</a>
+                <a href="#" class="button  button--icon  content__btn  js-open-popup">Add Sector</a>
+                <a href="#" class="button  button--blue  content__btn  js-open-popup-1">Edit Sector</a>
+                <a href="#" class="button  button--icon  content__btn  js-open-popup-3">Add Qualifications</a>
+                <a href="a-qualification-manage-qcf-rqf-manage-unit-bank.html" class="button  button--red-fill  content__btn">Manage Unit Bank</a>
+                <a href="#" class="button  button--green  content__btn  js-open-popup-2">Qualification Development Template</a>
               </div>
               @@include("../blocks/table-tools/table-tools--a-qualification-manage-fqp.html")
               @@include("../blocks/content/content--a-qualification-manage-qcf-rqf.html")
               @@include("../blocks/pagination/pagination.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-add-sector.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-add-qualification.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-qualification-development-template.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-view-centre.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-launch-form.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-view-structure.html")
+              @@include("../blocks/popup/popup--a-qualification-manage-qcf-rqf-edit.html")
+              
             </div>
           </div>
         </div>
