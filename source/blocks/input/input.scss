@@ -214,3 +214,53 @@
     }
   }
 }
+
+.search {
+  box-sizing: border-box;
+  height: auto;
+  max-height: 125px;
+  padding: 10px 9px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 19px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.06);
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.16);
+  }
+  ul {
+    margin: 0 0 4px;
+    padding: 0;
+  }
+}
+
+.search__item {
+  display: inline-block;
+  height: auto;
+  margin: 0 3px;
+  padding: 1px 5px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #000000;
+  white-space: nowrap;
+  background-color: #eff2f7;
+  border: 1px solid #ccd5e4;
+  border-radius: 15px;
+  cursor: default;
+  p {
+    display: inline;
+  }
+}
+
+.search__delete {
+  width: auto !important;
+  margin: 2px 1px 0 5px !important;
+  padding: 0 !important;
+  font-weight: bold;
+  color: rgba(35, 35, 35, 0.5);
+  cursor: pointer;
+  &:hover {
+    color: rgba(35, 35, 35, 0.8);
+  }
+}
