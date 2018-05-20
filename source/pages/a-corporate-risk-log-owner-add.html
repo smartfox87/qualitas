@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qualitais</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="main-body">
+    <div class="main-body__wrapper">
+      <div class="main-body__header">
+        @@include("../blocks/main-header/main-header-a.html")
+      </div>
+      <div class="main-body__main">
+        @@include("../blocks/main-nav/main-nav--a-none.html")
+        <div class="main-body__content">
+          @@include("../blocks/breadcrumbs/breadcrumbs--a-corporate-risk-log-owner.html")
+          <div class="grid-container">
+            <div class="grid-item  grid-item--4">
+              <div style="margin-bottom: 20px; display: flex; justify-content: flex-end;">
+                <a href="a-corporate-risk-log.html" class="button  button--green  content__btn">Risk Log Manager</a>
+                <a href="a-corporate-risk-log-edit-all.html" class="button  button--green  content__btn">Edit All Risk Log</a>
+                <a href="a-corporate-risk-log-owner.html" class="button  button--red-fill  content__btn">Risk Owner</a>
+                <a href="a-corporate-risk-log-team.html" class="button  content__btn">Team</a>
+              </div>
+              @@include("../blocks/content/content--a-corporate-risk-log-owner-add.html")
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
