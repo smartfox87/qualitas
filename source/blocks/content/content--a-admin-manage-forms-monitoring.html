@@ -1,0 +1,3421 @@
+<div class="content  block-shadow">
+  <section class="main-content">
+    <div class="container-fluid">
+      <div id="dashboardPanel">
+        <div class="main_area">
+
+          <div class="entry">
+
+            <div class="complent-ir">
+
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Select Centre
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <form action="" method="post">
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label for="form-field-select-1"></label>
+
+                        <script src="src/jquery.tokeninput.js" type="text/javascript"></script>
+
+                        <link href="styles/token-input.css" rel="stylesheet" type="text/css">
+
+                        <link href="styles/token-input-facebook.css" rel="stylesheet" type="text/css">
+
+                        <ul class="token-input-list-facebook">
+                          <li class="token-input-input-token-facebook">
+                            <input id="token-input-demo-input-pre-populated2" type="text" autocomplete="off">
+                            <tester style="left: -9999px; top: -9999px; width: auto; letter-spacing: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; white-space: nowrap; position: absolute;"></tester>
+                          </li>
+                        </ul>
+                        <input name="cref" id="demo-input-pre-populated2"
+                                style="width: 100% !important; display: none;" type="text">
+
+                        <script type="text/javascript">
+
+                          $(document).ready(function () {
+
+                            $('#demo-input-pre-populated2').tokenInput('https://qualitas.focusawards.org.uk/ex16202.php', {
+
+                              theme: 'facebook'
+
+                            });
+
+                          });
+
+                        </script>
+
+                        <!--  <select id="centre_select" class="form-control">
+                                         </select> -->
+                      </div>
+
+                      <input name="gos" type="hidden" value="1">
+                      <input name="Submit" class="btn btn-primary visible-md visible-lg hidden-sm hidden-xs"
+                              type="submit" value="Submit">
+                    </div>
+
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="panel panel-default table-responsive">
+                <input name="center_name" type="hidden" value="">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  EQA Details
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <div class="input-main2">
+
+                    <div class="name">EQA Name:</div>
+
+                    <div class="inpu">
+
+                      <input name="eqa_name" type="text" value=" ">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="name">Date of monitoring activity:</div>
+
+                    <div class="inpu">
+
+                      <input name="monitoring_act_date" class="date_picker" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Type of monitoring activity:</div>
+
+                  </div>
+
+                  <div class="input-main3">
+
+                    <div class="name">Remote:</div>
+
+                    <div class="inpu">
+
+                      <input name="remote" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main3">
+
+                    <div class="name">Visit:</div>
+
+                    <div class="inpu">
+
+                      <input name="visit" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main3">
+
+                    <div class="name">&nbsp;</div>
+
+                    <div class="inpu">
+
+                      <div class="check">
+                        <input name="person_visit" type="radio" value="One person visit">
+                        One person visit
+                      </div>
+
+                      <div class="check">
+                        <input name="person_visit" type="radio" value="Two person visit">
+                        Two person visit
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main3">
+
+                    <div class="name">Name of second officer:</div>
+
+                    <div class="inpu">
+
+                      <input name="second_ofcr_name" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <!--  <div class="input-main2">
+
+                     <div class="name">Centre name:</div>
+
+                     <div class="inpu">
+
+
+
+                         <script type="text/javascript" src="src/jquery.tokeninput.js"></script>
+
+                         <link rel="stylesheet" href="styles/token-input.css" type="text/css" />
+
+                         <link rel="stylesheet" href="styles/token-input-facebook.css" type="text/css" />
+
+
+
+                         <input type="text" id="demo-input-pre-populated1" name="center_name" style="width: 400px;box-shadow:none;" value=""/>
+
+                         <input type="hidden" id="selectedIds" name="selectedIds" />
+
+                         <script type="text/javascript">
+
+                                 $(document).ready(function() {
+
+                                     $("#demo-input-pre-populated1").tokenInput("https://qualitas.focusawards.org.uk/ex122.php", {
+
+                                          theme: "facebook",
+
+                                          onAdd: function (item) {
+
+                                           $.ajax({url:"ex202.php",data:{ name:item.name},
+
+                                           success:function(data){
+
+
+
+                                             $(".ceno").val(data);
+
+                                           }});
+
+                                     }
+
+
+
+                                     });
+
+                                 });
+
+                         </script>
+
+
+
+                     </div>
+
+                   </div>
+      -->
+                  <div class="input-main3">
+
+                    <div class="name">Centre number:</div>
+
+                    <div class="inpu">
+
+                      <input name="centre_number" class="ceno" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main3">
+
+                    <div class="name">Centre liaison/contact:</div>
+
+                    <div class="inpu">
+
+                      <input name="centre_liaison" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="name">Qualifications covered/reviewed:</div>
+
+                    <div class="inpu">
+
+                      <select name="qualifications_covered[]" id="qualifications_covered"
+                              style="width: 400px; height: 56px; -ms-overflow-y: scroll;" multiple="">
+
+                        <!--<input name="qualifications_covered" type="text" value="" />-->
+
+                      </select>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="name">If appropriate units covered:</div>
+
+                    <div class="inpu">
+
+                      <input name="units_covered" type="text" value="">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Section 1 – Monitoringpurpose and Centre update
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <div class="input-main">
+
+                    <div class="name">Focus/rationale for the engagement:</div>
+
+                    <div class="inpu">
+
+                      <input name="focus_engagement" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Focus/rationale for the engagement: (select one or many reasons)</div>
+
+                    <div class="inpu">
+
+                      <div class="check3">
+                        <input name="focus_engagement1" type="checkbox" value="Standardisation check">
+                        Standardisation check
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement2" type="checkbox"
+                                value="Monitoring of assessment &amp;/or delivery">
+                        Monitoring of assessment &amp;/or delivery
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement3" type="checkbox"
+                                value="Verify certificate claims (portfolios etc)">
+                        Verify certificate claims (portfolios etc)
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement4" type="checkbox" value="New Centre">
+                        New Centre
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement5" type="checkbox" value="Newly started qualification">
+                        Newly started qualification
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement6" type="checkbox"
+                                value="Possible new Centre/re-activate Centre">
+                        Possible new Centre/re-activate Centre
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement7" type="checkbox" value="Complaint / Appeal">
+                        Complaint / Appeal
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement8" type="checkbox"
+                                value="Assessor/internal verification training">
+                        Assessor/internal verification training
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement9" type="checkbox"
+                                value="Raise profile of a new service /qualification">
+                        Raise profile of a new service /qualification
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement10" type="checkbox" value="New partner/site related">
+                        New partner/site related
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement11" type="checkbox" value="Review associated/satellite site(s)">
+                        Review associated/satellite site(s)
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement12" type="checkbox" value="Not recently delivered for a while">
+                        Not recently delivered for a while
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement13" type="checkbox" value="Review actions">
+                        Review actions
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement14" type="checkbox" value="New staff involved">
+                        New staff involved
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement15" type="checkbox" value="High Turnover">
+                        High Turnover
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement16" type="checkbox" value="Centre request">
+                        Centre request
+                      </div>
+
+                      <div class="check3">
+                        <input name="focus_engagement17" type="checkbox" value="Other">
+                        Other
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">What’s new / changed: (e.g.key staff, physical resource or programme delivery
+                      changes)?
+                    </div>
+
+                    <div class="inpu">
+
+                      <input name="section_one_field1" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">What recent external audits, visits, awards have you had that may help focus
+                      this visit?
+                    </div>
+
+                    <div class="inpu">
+
+                      <input name="section_one_field2" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Date of visit and associated decision(s) by the AO/inspection body</div>
+
+                    <div class="inpu">
+
+                      <input name="section_one_field3" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Do you have any areas, requirements that we can address\help with?</div>
+
+                    <div class="inpu">
+
+                      <input name="section_one_field4" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Possible new opportunities/areas of interest at the centre where further support
+                      may be required
+                    </div>
+
+                    <div class="inpu">
+
+                      <input name="section_one_field5" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Actions carried over to this visit:</div>
+
+                    <div class="inpu">
+
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                        <tbody>
+                          <tr>
+
+                            <th width="3%">&nbsp;</th>
+
+                            <th width="57%">Action</th>
+
+                            <th width="10%">Deadline date</th>
+
+                            <th width="30%">Responsible officer</th>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>1</td>
+
+                            <td>
+                              <input name="section_one_field6" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field7" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field8" type="text">
+                            </td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>2</td>
+
+                            <td>
+                              <input name="section_one_field9" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field10" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field11" type="text">
+                            </td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>3</td>
+
+                            <td>
+                              <input name="section_one_field12" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field13" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_one_field14" type="text">
+                            </td>
+
+                          </tr>
+
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Section 2 – Governance, management, systems and resources
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <p>Focuses on the Centre’s core systems, partnership arrangements and development policies</p>
+
+                  <div class="input-main">
+
+                    <div class="name">Details of any internal Centre reviews that have been carried out to date in
+                      relation to evaluating their own performance, resources, delivery arrangements, etc…
+                    </div>
+
+                    <div class="inpu">
+
+                      <input name="section_two_text_field1" type="text" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have robust internal governance and management arrangements?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field2" type="checkbox" value="Yes">
+                        Yes – all in place
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field3" type="checkbox" value="No">
+                        No – no single named point of accountability in place
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field4" type="checkbox" value="No">
+                        No - Centre coordination ineffective
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field5" type="checkbox" value="No">
+                        No – poor record in complying with actions
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field6" type="checkbox" value="No">
+                        No - existing/new partnerships not documented
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field7" type="checkbox" value="No">
+                        No – governance arrangements are unclear
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field8" type="checkbox" value="No">
+                        No - key policies inadequate (e.g. Equality and Diversity, Complaints, Appeals)
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field9" type="checkbox" value="No">
+                        No – poor security of key documents
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_two_checkbox_field10" type="checkbox" value="No">
+                        No - unpaid bills
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field11" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Partnership arrangements between organisations is clearly documented and where
+                      applicable partners approved by us
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field12" type="checkbox" value="Yes">
+                        Yes – documented, signed agreements indicating the lines of accountability of partner
+                        organisations in relation to the management of assessment and internal quality assurance are
+                        in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field13" type="checkbox" value="N/A">
+                        N/A – no partnership arrangements in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field14" type="checkbox" value="No">
+                        No – arrangements are not clearly or sufficiently documented
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field15" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Has been a major non-compliance identified during this visit which could be
+                      deemed an adverse effect by Ofqual
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field16" type="checkbox" value="No">
+                        No - there is a substantial error in the Centre’s assessment materials,
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field17" type="checkbox" value="No">
+                        No - there has been a loss or theft of assessment materials and/or a breach of confidentiality
+                        in, any assessment
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field18" type="checkbox" value="No">
+                        No - there has been a failure in the delivery of assessments which threatens assessors’
+                        ability to differentiate accurately and consistently between the levels of attainment
+                        demonstrated by Learners,
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field19" type="checkbox" value="No">
+                        No - incorrect results or certificate claims have been recorded/submitted to Focus Awards
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field20" type="checkbox" value="No">
+                        No - there has been an incident of malpractice or maladministration, which could either
+                        invalidate the award of a qualification
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field21" type="checkbox" value="No">
+                        No - the Centre and/or key staff is named as a party in any criminal or civil proceedings or
+                        is subjected to a regulatory investigation or sanction by a professional, regulatory, or
+                        government body
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field22" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate arrangements in place prevent and, if they
+                      occur, investigate allegations of malpractice and maladministration?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field23" type="checkbox" value="Yes">
+                        Yes – appropriate arrangements in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field24" type="checkbox" value="No">
+                        No - insufficient internal controls in place (e.g. no internal review procedures, no
+                        documented processes, poor record keeping etc…)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field25" type="checkbox" value="No">
+                        No – no documented malpractice/malpractice arrangements in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field26" type="checkbox" value="No">
+                        No – possible/actual instance of maladministration/malpractice identified during the
+                        engagement
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field27" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate staff (with expertise and competence) and
+                      resources in place to deliver the qualification(s) in accordance with the relevant qualification
+                      and/or regulatory requirements?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field28" type="checkbox" value="Yes">
+                        Yes – staff and controls in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field29" type="checkbox" value="No">
+                        No – delivery team records are out of date
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field30" type="checkbox" value="No">
+                        No - poor arrangements in place in relation to staff monitoring, support and/or training/staff
+                        development
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field31" type="checkbox" value="No">
+                        No – unqualified/inexperienced/peripatetic staff
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field32" type="checkbox" value="No">
+                        No - staff not on the Centre’s profile
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field33" type="checkbox" value="No">
+                        No – inappropriate equipment and/or other resources being used
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field34" type="checkbox" value="No">
+                        No - frequent changes to staff affect performance
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field35" type="checkbox" value="No">
+                        No - occupational competence is in question
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field36" type="checkbox" value="No">
+                        No – in sufficient managerial and other resources in place to enable it to effectively and
+                        efficiently undertake the delivery of the qualifications
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field37" type="checkbox" value="No">
+                        No - insufficient staff to meet assessment and quality assurance demands
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field38" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate learner registration; tracking and
+                      certification request arrangements and are the records maintained for three years?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field39" type="checkbox" value="Yes">
+                        Yes
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field40" type="checkbox" value="No">
+                        No – the Centre does not take all reasonable steps to ensure learners are clearly and uniquely
+                        identified (e.g. ULN not in place/ supported, etc…)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field41" type="checkbox" value="No">
+                        No - learner records and details of achievements are not accurate, kept up to date, securely
+                        stored in line with and available for external verification and auditing.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field42" type="checkbox" value="No">
+                        No – inadequate consideration of RPL, APL, proxy, exemptions and equivalences undertaken
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field43" type="checkbox" value="No">
+                        No - registrations are often late and/or incomplete (eg not all learners being assessed are
+                        registered)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field44" type="checkbox" value="No">
+                        No – records are not kept for a minimum of three years
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field45" type="checkbox" value="No">
+                        No - centre is not able to track learners at all stages of their programme and give pre-exit
+                        guidance to learners
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field46" type="checkbox" value="No">
+                        No – incorrect, incomplete and/or unauthenticated certification claims made
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field47" type="checkbox" value="No">
+                        No - registration and certification information does not correspond with our system records
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field48" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Is the Centre aware and adhering to Focus Awards policies and procedures?</div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field49" type="checkbox" value="Yes">
+                        Yes - all staff are aware and adhere to Focus Awards policies and procedures
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field50" type="checkbox" value="No">
+                        No - staff are not aware of Focus Awards policies and procedures
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field50" type="checkbox" value="No">
+                        No - staff do not adhere to Focus Awards policies and procedures
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field51" type="checkbox" value="No">
+                        No - staff are using out of date policies and procedures
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field52" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Has the Centre provided learners and staff with access to complaints and appeals
+                      procedures and policies? Do they have an acceptable level of understanding of these policies?
+                      Are accurate records kept of all appeals and complaints?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field53" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field54" type="checkbox" value="No">
+                        No – insufficient evidence that learners are aware of the policies and procedures
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field55" type="checkbox" value="No">
+                        No – insufficient evidence that learners are aware of complaints policy and procedures
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field56" type="checkbox" value="No">
+                        No – Centre does not keep accurate records of appeals and complaints
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field57" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate arrangements in place for dealing with special
+                      consideration and reasonable adjustment requests (including appropriate records)?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field58" type="checkbox" value="Yes">
+                        Yes - documented evidence of correct use of our reasonable adjustment/special considerations
+                        form
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field59" type="checkbox" value="N/A">
+                        N/A – no such instances since last visit
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field60" type="checkbox" value="No">
+                        No – no inappropriate arrangements are in place to identify and record special considerations
+                        and reasonable adjustments
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_two_textarea_field61" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Level of compliance in relation to the areas covered in the visit:</div>
+
+                    <div class="inpu">
+
+                      <div class="check">
+                        <input name="section_two_checkbox_field62" type="radio" value="Compliant">
+                        Compliant
+                      </div>
+
+                      <div class="check">
+                        <input name="section_two_checkbox_field62" type="radio" value="Non-compliant">
+                        Non-compliant
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Actions for the centre:</div>
+
+                    <div class="inpu">
+
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                        <tbody>
+                          <tr>
+
+                            <th width="3%">&nbsp;</th>
+
+                            <th width="57%">Action</th>
+
+                            <th width="10%">Deadline date</th>
+
+                            <th width="30%">Responsible officer</th>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>1</td>
+
+                            <td>
+                              <input name="section_two_text_field64" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_two_text_field65" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_two_text_field66" type="text">
+                            </td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>2</td>
+
+                            <td>
+                              <input name="section_two_text_field67" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_two_text_field68" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_two_text_field69" type="text">
+                            </td>
+
+                          </tr>
+
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Potential Risk Going Forward:</div>
+
+                    <div class="inpu">
+
+                      <div class="check">
+                        <input name="section_two_radio_field70" type="radio" value="Low">
+                        Low
+                      </div>
+
+                      <div class="check">
+                        <input name="section_two_radio_field70" type="radio" value="Medium">
+                        Medium
+                      </div>
+
+                      <div class="check">
+                        <input name="section_two_radio_field70" type="radio" value="High">
+                        High
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Rationale for the risk value:</div>
+
+                    <div class="inpu">
+
+                      <input name="section_two_text_field71" type="text" value="">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Section 3 – Qualification delivery
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <p>Focuses on how the Centre delivers qualifications, the assessment methods used, application of
+                    quality assurance procedures and the appropriateness of the centre’s staff and resources
+                    (including sites used to deliver the qualification).</p>
+
+                  <div class="input-main">
+
+                    <div class="name">Delivery staff sampled/interviewed</div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field72" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field73" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field74" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field75" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field76" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field77" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field78" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field79" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field80" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field81" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">List the associate sites visited (if appropriate)</div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field82" type="text" placeholder="Site Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field83" type="text" placeholder="Site Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field84" type="text" placeholder="Site Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Was the staff performance and knowledge adequate?</div>
+
+                    <div class="inpu">
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field85" type="checkbox" value="Yes">
+                        Yes – staff performance and knowledge was adequate
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field86" type="checkbox" value="No">
+                        No – staff performance and knowledge was inadequate
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field87" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Delivery/training arrangements observed (if appropriate)</div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field88" type="checkbox"
+                                value="Lesson plan tailored to the needs of the qualification and learners">
+                        Lesson plan tailored to the needs of the qualification and learners
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field89" type="checkbox" value="Assessment preparation">
+                        Assessment preparation
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field90" type="checkbox" value="Q &amp; A session">
+                        Q &amp; A session
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field91" type="checkbox" value="Practical demonstration">
+                        Practical demonstration
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field92" type="checkbox" value="Group participation">
+                        Group participation
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field93" type="checkbox"
+                                value="Tuition/delivery given by centre staff">
+                        Tuition/delivery given by centre staff
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field94" type="checkbox" value="Training materials">
+                        Training materials
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field95" type="checkbox"
+                                value="Visual aids/electronic methods">
+                        Visual aids/electronic methods
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field96" type="checkbox" value="Summary session">
+                        Summary session
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field97" type="checkbox" value="Tasks/exercises">
+                        Tasks/exercises
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field98" type="checkbox" value="Presentations">
+                        Presentations
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field99" type="checkbox" value="e-learning">
+                        e-learning
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field100" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Has the Centre provided appropriate teaching, stimulus, support, learning
+                      materials and resources?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field101" type="checkbox" value="Yes">
+                        Yes – Centre has provided appropriate teaching, support, learning materials and resources
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field102" type="checkbox" value="No">
+                        No – Centre has not provided appropriate teaching, stimulus, support, learning materials and
+                        resources
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field103" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Assessment methods observed during the visit</div>
+
+                    <div class="inpu">
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field104" type="checkbox"
+                                value="Observing learners perform naturally in the workplace">
+                        Observing learners perform naturally in the workplace
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field105" type="checkbox"
+                                value="Asking learner questions">
+                        Asking learner questions
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field106" type="checkbox" value="Professional discussion">
+                        Professional discussion
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field107" type="checkbox"
+                                value="Setting tests/examinations">
+                        Setting tests/examinations
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field108" type="checkbox"
+                                value="Setting projects and tasks">
+                        Setting projects and tasks
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field109" type="checkbox"
+                                value="Observe learners’ performance in  simulated conditions">
+                        Observe learners’ performance in simulated conditions
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field110" type="checkbox"
+                                value="Using evidence from other people (including peers and witnesses)">
+                        Using evidence from other people (including peers and witnesses)
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field111" type="checkbox"
+                                value="Assessing the learner’s report of their work">
+                        Assessing the learner’s report of their work
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_three_checkbox_field112" type="checkbox"
+                                value="Taking account of past experiences and achievements">
+                        Taking account of past experiences and achievements
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field113" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Were appropriate, effective and fit for purpose assessment arrangements and
+                      evidence used in the delivery of the qualification(s)?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field114" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field115" type="checkbox" value="No">
+                        No –the assessment arrangements and methods used are not fit for purpose
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field116" type="checkbox" value="No">
+                        No –the assessments being used are not consistent with the level demand expected by Focus
+                        Awards for the unit(s) and/or qualification(s)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field117" type="checkbox" value="No">
+                        No – inappropriate and/or unclear or ambiguous stimulus materials were used by the Centre
+                        (e.g. materials which facilitate learners’ demonstration of their knowledge, skills and
+                        understanding)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field118" type="checkbox" value="No">
+                        No – learners were not provided with opportunities to claim reasonable adjustments and/or
+                        special considerations
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field119" type="checkbox" value="No">
+                        No – evidence generated by learners in assessments is not always attributable to the learner
+                        concerned (either directly or via their contribution to group work)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field120" type="checkbox" value="No">
+                        No – assessments were not completed in accordance with the normal specified conditions
+                        associated with the qualification(s)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field121" type="checkbox" value="No">
+                        No - the criteria against which learners’ performance is to be differentiated was not
+                        understood by assessors and/or accurately and consistently applied.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field122" type="checkbox" value="No">
+                        No - changes to the marking/assessment of evidence had to be made
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field123" type="checkbox" value="No">
+                        No – the recorded assessment results did not reflect the level of attainment demonstrated by
+                        the learner(s)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field124" type="checkbox" value="No">
+                        No - the Centre did not take into account all admissible evidence generated by the learner(s)
+                        when marking an assessment/awarding the unit
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field125" type="checkbox" value="No">
+                        No - the Centre did not comply with rules specified in relation to the quantity or type of
+                        evidence generated by learners that will be accepted and/or expected
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field126" type="checkbox" value="No">
+                        No - the Centre did not comply with rules specified in relation to how the final mark for the
+                        qualification will be calculated.
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field127" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Please provide details if changes had to be made to the marking/assessment of
+                      learners’ evidence if the ‘level of demand’ or the marking was inappropriate. If such changes
+                      were made provide details of the review you carried out to ascertain how widespread this was and
+                      any actions the centre or Focus Awards must take to prevent this was reoccurring and/or to
+                      adjust results awarded to previous learners:
+                    </div>
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field128"></textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Centre ensures assessor/learner assessment ratios are appropriate and that
+                      assessment days / visits are planned and structured appropriately
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field129" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field130" type="checkbox" value="No">
+                        No – inappropriate assessor/learner ratios maintained
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field131" type="checkbox" value="No">
+                        No – assessments are not structured or planned
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field132" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Centre ensures that assessors conduct assessments appropriately utilising
+                      arrangements that result in Valid, Reliable, Comparable, Manageable assessments that Minimise
+                      Bias.
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field133" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_two_checkbox_field134" type="checkbox" value="No">
+                        No - assessors do not conduct assessments that are consistently valid, reliable, comparable,
+                        and manageable and/or minimise bias.
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field135" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">What language was the assessments carried out in (a learner can be assessed in a
+                      language other than English and Irish if it is one of the core objectives of the qualification
+                      or if proficiency in these languages is not required in the workplace in relation to roles
+                      supported by the qualification)?
+                    </div>
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field136"></textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">If another language was used, was approval sought from us beforehand and is the
+                      level of demand consistent with those delivered in English or Irish?
+                    </div>
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field137"></textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre mitigate against conflicts of interests?</div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field138" type="checkbox" value="Yes">
+                        Yes - the Centre ensures that assessments are not undertaken by any person who has a personal
+                        interest in the result of the assessment(e.g. Internal Verifiers signing off their own
+                        assessments; someone assessing the work of a family member; or someone whose pay is influenced
+                        by positive assessment results).
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field139" type="checkbox" value="Yes">
+                        Yes – conflicts currently exist and these are appropriately monitored, managed or reported on
+                        by the Centre
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field140" type="checkbox" value="No">
+                        No – the arrangements in place do not appear sufficiently robust to prevent such conflicts
+                        from occurring
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field141" type="checkbox" value="No">
+                        No – the conflicts currently exist and these are not appropriately monitored, managed or
+                        reported on by the Centre
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_three_checkbox_field142" type="checkbox" value="No">
+                        No – conflicts exist and there are sufficient doubts about the integrity of some of the
+                        assessment and/or internal verification decisions
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field143" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                    <tbody>
+                      <tr>
+
+                        <th width="25%">Name of learner’s work that was sampled</th>
+
+                        <th width="15%">Qualification(s) registered on and sampled</th>
+
+                        <th width="15%">Unit(s) sampled and assessment method(s) observed/reviewed</th>
+
+                        <th width="15%">Assessors details (eg names and dates of assessment)</th>
+
+                        <th width="15%">internal verification details (eg names and dates of verification)</th>
+
+                        <th width="15%">Do you agree with the decision? If not what action did you take?</th>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>
+                          <input name="section_three_text_field144" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field145" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field146" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field147" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field148" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field149" type="text">
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>
+                          <input name="section_three_text_field150" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field151" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field152" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field153" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field154" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field155" type="text">
+                        </td>
+
+                      </tr>
+
+                      <tr>
+
+                        <td>
+                          <input name="section_three_text_field156" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field157" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field158" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field159" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field160" type="text">
+                        </td>
+
+                        <td>
+                          <input name="section_three_text_field161" type="text">
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <div class="input-main">
+
+                    <div class="name">EQA Feedback:</div>
+
+                    <div class="inpu">
+
+                      <textarea name="section_three_textarea_field162"></textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Actions for the centre:</div>
+
+                    <div class="inpu">
+
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                        <tbody>
+                          <tr>
+
+                            <th width="3%">&nbsp;</th>
+
+                            <th width="57%">Action</th>
+
+                            <th width="10%">Deadline date</th>
+
+                            <th width="30%">Responsible officer</th>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>1</td>
+
+                            <td>
+                              <input name="section_three_text_field163" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_three_text_field164" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_three_text_field165" type="text">
+                            </td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>2</td>
+
+                            <td>
+                              <input name="section_three_text_field166" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_three_text_field167" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_three_text_field168" type="text">
+                            </td>
+
+                          </tr>
+
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Potential Risk Going Forward:</div>
+
+                    <div class="inpu">
+
+                      <div class="check">
+                        <input name="section_three_radio_field169" type="radio" value="Low">
+                        Low
+                      </div>
+
+                      <div class="check">
+                        <input name="section_three_radio_field169" type="radio" value="Medium">
+                        Medium
+                      </div>
+
+                      <div class="check">
+                        <input name="section_three_radio_field169" type="radio" value="High">
+                        High
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Rationale for the risk value:</div>
+
+                    <div class="inpu">
+
+                      <input name="section_three_text_field170" type="text" value="">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Section 4 – Internal Quality Assurance Arrangements
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <p>This section focuses on the Centres provision for Internal Quality Assurance.</p>
+
+                  <div class="input-main">
+
+                    <div class="name">Delivery staff sampled/interviewed</div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field171" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field172" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field173" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field174" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field175" type="text" placeholder="Name" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main2">
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field176" type="text" placeholder="Role" value="">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate internal quality assurance arrangements in
+                      place?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field177" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field178" type="checkbox" value="No">
+                        No - insufficient internal quality assurance activities carried out since last visit (e.g.
+                        sampling, standardisation and training)
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field179" type="checkbox" value="No">
+                        No – inadequate quality assurance team records
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field180" type="checkbox" value="No">
+                        No – insufficient rigour applied
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field181" type="checkbox" value="No">
+                        No – insufficient coverage for the range of qualifications being offered
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field182" type="checkbox" value="No">
+                        No – no internal recognition of high-risk qualifications/units
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field183" type="checkbox" value="No">
+                        No – no internal verification strategy or sampling plans
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_four_textarea_field184" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Was the Centre’s approach to internal quality assuring assessment arrangements
+                      appropriate?
+                    </div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field185" type="checkbox" value="Yes">
+                        Yes – fully compliant
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field186" type="checkbox" value="No">
+                        No – do not adhere to their internal verification strategy and sampling plan
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field187" type="checkbox" value="No">
+                        No – the internal quality assurance arrangements were not documented and/or clearly understood
+                        by staff in order to be consistent with national requirements and ensure the quality and
+                        consistency of assessment.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field188" type="checkbox" value="No">
+                        No – the Centre has not ensured appropriate security and confidentially of assessment
+                        materials prior to their use in assessments with learners (where confidentiality of assessment
+                        materials or information about the assessments is required).
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field189" type="checkbox" value="No">
+                        No - assessment decisions and practices are not regularly sampled and/or findings are not
+                        acted upon to ensure consistency and fairness.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field190" type="checkbox" value="No">
+                        No – staff do have not have sufficient time, resources and authority to perform their roles
+                        and responsibilities effectively.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field191" type="checkbox" value="No">
+                        No - roles, responsibilities, authorities and accountabilities of the assessment and
+                        verification team across all assessment sites are not clearly defined, allocated and/or
+                        understood.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field192" type="checkbox" value="No">
+                        No - assessment and/or internal quality assurance is not conducted by relevant qualified,
+                        experienced and/or occupationally expert staff.
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field193" type="checkbox" value="No">
+                        No - assessment decisions of unqualified assessors are not checked, authenticated and
+                        countersigned by a qualified assessor or quality assurance staff member
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field194" type="checkbox" value="No">
+                        No - decisions of unqualified quality assurance staff are not checked, authenticated and
+                        countersigned by an internal verifier who is appropriately qualified, experienced and/or
+                        competent.
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_four_textarea_field195" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Does the Centre have appropriate standardisation arrangements in place?</div>
+
+                    <div class="inpu">
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field196" type="checkbox" value="Yes">
+                        Yes – effective standardisation arrangements are in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field197" type="checkbox" value="No">
+                        No – Centre has no standardisation plans in place
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field198" type="checkbox" value="No">
+                        No – standardisation has not taken place in the last 12 months
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_four_checkbox_field199" type="checkbox" value="No">
+                        No – standardisation has not occurred across all active delivery sites, staff or assessment
+                        methods
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="inpu">
+
+                      <textarea name="section_four_textarea_field200" placeholder="Notes">Notes</textarea>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Actions for the centre:</div>
+
+                    <div class="inpu">
+
+                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                        <tbody>
+                          <tr>
+
+                            <th width="3%">&nbsp;</th>
+
+                            <th width="57%">Action</th>
+
+                            <th width="10%">Deadline date</th>
+
+                            <th width="30%">Responsible officer</th>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>1</td>
+
+                            <td>
+                              <input name="section_four_text_field201" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_four_text_field202" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_four_text_field203" type="text">
+                            </td>
+
+                          </tr>
+
+                          <tr>
+
+                            <td>2</td>
+
+                            <td>
+                              <input name="section_four_text_field204" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_four_text_field205" class="date_picker" type="text">
+                            </td>
+
+                            <td>
+                              <input name="section_four_text_field206" type="text">
+                            </td>
+
+                          </tr>
+
+                        </tbody>
+
+                      </table>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Potential Risk Going Forward:</div>
+
+                    <div class="inpu">
+
+                      <div class="check">
+                        <input name="section_four_radio_field207" type="radio" value="Low">
+                        Low
+                      </div>
+
+                      <div class="check">
+                        <input name="section_four_radio_field207" type="radio" value="Medium">
+                        Medium
+                      </div>
+
+                      <div class="check">
+                        <input name="section_four_radio_field207" type="radio" value="High">
+                        High
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Rationale for the risk value:</div>
+
+                    <div class="inpu">
+
+                      <input name="section_four_text_field210" type="text" value="">
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default table-responsive">
+                <div class="panel-heading">
+                  <i class="fa fa-external-link-square"></i>
+                  Section 5 – Learner experience
+                  <div class="panel-tools">
+                    <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                    </a>
+                  </div>
+                </div>
+                <div class="panel-body">
+
+                  <p>This section focuses on the experiences and feedback of learners undertaking the
+                    qualification(s).</p>
+
+                  <div class="input-main">
+
+                    <div class="name">Learner names and interview summary:</div>
+
+                    <div class="inpu">
+
+                      <input name="section_five_text_field211" type="text">
+
+                    </div>
+
+                  </div>
+
+                  <div class="input-main">
+
+                    <div class="name">Were the learners registered and matched our records?</div>
+
+                    <div class="inpu">
+
+                      <div class="check3">
+                        <input name="section_five_checkbox_field212" type="checkbox" value="Yes">
+                        Yes
+                      </div>
+
+                      <div class="check3">
+                        <input name="section_five_checkbox_field213" type="checkbox" value="No">
+                        No – learners were not registered
+                      </div>
+
+                      <div class="check2">
+                        <input name="section_five_checkbox_field214" type="checkbox" value="No">
+                        No – learners were registered but did not match our records
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Has the learner(s) met their relevant delivery staff?</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_five_checkbox_field215" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check">
+                          <input name="section_five_checkbox_field216" type="checkbox" value="No">
+                          No
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field217" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Did the learner(s) know about the relevant quality assurance staff and
+                        arrangements?
+                      </div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_five_checkbox_field218" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check">
+                          <input name="section_five_checkbox_field219" type="checkbox" value="No">
+                          No
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field220" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Did the learner(s) have access to the appropriate materials to undertake the
+                        qualification/unit?
+                      </div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field221" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field222" type="checkbox" value="No">
+                          No - learner(s) received some materials
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field223" type="checkbox" value="No">
+                          No – learner(s) received too many materials
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field224" type="checkbox" value="No">
+                          No – learner(s) has had not received appropriate materials
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field224" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Has the learner(s) received feedback from the Centre’s staff in relation to
+                        their progress and work?
+                      </div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field225" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field226" type="checkbox" value="No">
+                          No - learner(s) did not receive sufficient feedback
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_five_checkbox_field227" type="checkbox" value="No">
+                          No – quality of feedback is poor or non-existent
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field228" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Did the learner(s) feel they had enough time to complete the
+                        qualification/units?
+                      </div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field229" type="checkbox" value="No">
+                          Yes
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field230" type="checkbox" value="No">
+                          No - inadequate learner plan in place
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_five_checkbox_field231" type="checkbox" value="No">
+                          No - learner(s) felt they had insufficient time
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field232" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Did the learner(s) understand the process of their qualification?</div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field233" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field234" type="checkbox" value="No">
+                          No - learner(s) did not receive sufficient information
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field235" type="checkbox" value="No">
+                          No – induction/exit process inadequate
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_five_checkbox_field236" type="checkbox" value="No">
+                          No – learner(s) not considered in the delivery
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_five_textarea_field237" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Did the learner(s) have any views on Focus Awards(e.g. in relation to the
+                        qualification, the qualification, the Centre and materials, etc…)
+                      </div>
+
+                      <div class="inpu">
+
+                        <input name="section_five_checkbox_field238" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Actions for the centre:</div>
+
+                      <div class="inpu">
+
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                          <tbody>
+                            <tr>
+
+                              <th width="3%">&nbsp;</th>
+
+                              <th width="57%">Action</th>
+
+                              <th width="10%">Deadline date</th>
+
+                              <th width="30%">Responsible officer</th>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>1</td>
+
+                              <td>
+                                <input name="section_five_checkbox_field239" type="text">
+                              </td>
+
+                              <td>
+                                <input name="section_five_checkbox_field240" type="text">
+                              </td>
+
+                              <td>
+                                <input name="section_five_checkbox_field241" type="text">
+                              </td>
+
+                            </tr>
+
+                            <tr>
+
+                              <td>2</td>
+
+                              <td>
+                                <input name="section_five_checkbox_field242" type="text">
+                              </td>
+
+                              <td>
+                                <input name="section_five_checkbox_field243" type="text">
+                              </td>
+
+                              <td>
+                                <input name="section_five_checkbox_field244" type="text">
+                              </td>
+
+                            </tr>
+
+                          </tbody>
+
+                        </table>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Potential Risk Going Forward:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_five_radio_field245" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_five_radio_field245" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_five_radio_field245" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Rationale for the risk value:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_five_text_field248" type="text" value="">
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default table-responsive">
+                  <div class="panel-heading">
+                    <i class="fa fa-external-link-square"></i>
+                    Section 6 – Advice and support
+                    <div class="panel-tools">
+                      <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+
+                    <p>This section summarises the advice, support and guidance given to the Centre through
+                      formal/informal engagements</p>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                          <textarea name="section_six_text_field249"
+                                  placeholder="(Additional) Topics/details covered in this engagement">(Additional) Topics/details covered in this engagement</textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="inpu">
+
+                        <textarea name="section_six_text_field250" placeholder="Notes">Notes</textarea>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default table-responsive">
+                  <div class="panel-heading">
+                    <i class="fa fa-external-link-square"></i>
+                    Section 7 – Monitoring outcomes
+                    <div class="panel-tools">
+                      <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+
+                    <p>This section summarises the main outcomes from the monitoring activity.</p>
+
+                    <div class="input-main">
+
+                      <div class="name">Monitoring summary and main outcomes</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_checkbox_field251" type="checkbox" value="Compliant">
+                          Compliant
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_checkbox_field252" type="checkbox" value="Non-compliant">
+                          Non-compliant
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">EQA comments on compliance level:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field253" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Areas of considerable strength/good practice:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field254" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Is the Centre eligible for Direct Claim Status</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_checkbox_field255" type="checkbox" value="Yes">
+                          Yes
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_checkbox_field256" type="checkbox" value="No">
+                          No
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">EQA comments:</div>
+
+                      <div class="inpu">
+
+                        <textarea name="section_seven_textarea_field257" placeholder=""></textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Sanctions that will be imposed</div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field258" type="checkbox"
+                                  value="Withhold certificates for a qualification (1a)">
+                          Withhold certificates for a qualification (1a)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field259" type="checkbox"
+                                  value="Withhold certificates for a qualification sector (1b)">
+                          Withhold certificates for a qualification sector (1b)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field260" type="checkbox"
+                                  value="Withhold certificates for a qualification type (1c)">
+                          Withhold certificates for a qualification type (1c)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field261" type="checkbox"
+                                  value="Withhold certificates for all qualifications (1d)">
+                          Withhold certificates for all qualifications (1d)
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Sanctions that will be recommended</div>
+
+                      <div class="inpu">
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field262" type="checkbox"
+                                  value="Suspend registrations for a qualification (2 a)">
+                          Suspend registrations for a qualification (2 a)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field263" type="checkbox"
+                                  value="Suspend registrations for a qualification sector (2 b)">
+                          Suspend registrations for a qualification sector (2 b)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field264" type="checkbox"
+                                  value="Suspend registrations for a qualification type (2 c)">
+                          Suspend registrations for a qualification type (2 c)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field265" type="checkbox"
+                                  value="Suspend on registrations for all qualifications (2 d)">
+                          Suspend on registrations for all qualifications (2 d)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field266" type="checkbox"
+                                  value="Remove approval for a qualification (3 a)">
+                          Remove approval for a qualification (3 a)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field267" type="checkbox"
+                                  value="Remove approval for a qualification sector (3 b)">
+                          Remove approval for a qualification sector (3 b)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field268" type="checkbox"
+                                  value="Remove approval for a qualification type (3 c)">
+                          Remove approval for a qualification type (3 c)
+                        </div>
+
+                        <div class="check3">
+                          <input name="section_seven_checkbox_field269" type="checkbox"
+                                  value="Remove approval for all qualifications (3 d)">
+                          Remove approval for all qualifications (3 d)
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Rationale for the sanctions (if appropriate):</div>
+
+                      <div class="inpu">
+
+                        <textarea name="section_seven_textarea_field270" placeholder=""></textarea>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">For sanctions a, b or c please state the qualification (a), qualification
+                        sector (b) or qualification type (c) that is affected (if applicable):
+                      </div>
+
+                      <div class="inpu">
+
+                        <textarea name="section_seven_textarea_field271" placeholder=""></textarea>
+
+                      </div>
+
+                    </div>
+
+                    <p><strong>Risk Profile</strong></p>
+
+                    <div class="input-main">
+
+                      <div class="name">Governance, management, systems, resources and/or quality assurance:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field272" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field272" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field272" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Qualification delivery:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field273" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field273" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field273" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Internal Quality Assurance Arrangements:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field274" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field274" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field274" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Learner experience:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field275" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field275" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field275" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Qualification approval:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field276" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field276" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field276" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Finance:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field277" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field277" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field277" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main2">
+
+                      <div class="name">Malpractice / maladministration:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field278" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field278" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field278" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Overall risk going forward:</div>
+
+                      <div class="inpu">
+
+                        <div class="check">
+                          <input name="section_seven_radio_field279" type="radio" value="Low">
+                          Low
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field279" type="radio" value="Medium">
+                          Medium
+                        </div>
+
+                        <div class="check">
+                          <input name="section_seven_radio_field279" type="radio" value="High">
+                          High
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Rationale for the risk value:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field280" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Proposed date and focus of next visit:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field281" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">EQA Name:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field282" type="text" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">EQA signature:</div>
+
+                      <div class="inpu">
+
+                        <input name="userfile" type="file" value="">
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">Head of Quality Assurance signature:</div>
+
+                      <div class="inpu">
+
+                        <input name="section_seven_text_field283" type="text" value="">
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default table-responsive">
+                  <div class="panel-heading">
+                    <i class="fa fa-external-link-square"></i>
+                    Section 8 – Fitness for purpose (AO Use only)
+                    <div class="panel-tools">
+                      <a class="btn btn-xs btn-link panel-collapse collapses" href="javascript:void(0)">
+                      </a>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+
+                    <p>This section captures information from the visit to help us ascertain if the delivery and
+                      assessment arrangements we specified in the qualification(s) specification were appropriate in
+                      their content and instruction and enabled centres to apply them effectively and
+                      consistently.</p>
+
+                    <div class="input-main">
+
+                      <div class="name">Are the assessment arrangements appropriate and fit for purpose?</div>
+
+                      <div class="inpu">
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field284" type="checkbox" value="Yes">
+                          Yes – assessment arrangements are appropriate and fit for purpose
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field285" type="checkbox" value="No">
+                          No -it has imposed unnecessary costs or burden on the centre
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field286" type="checkbox" value="No">
+                          No -it does not lend itself to be delivered efficiently or cost effectively (using only
+                          resources that would be reasonably be expected to obtain/use)
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field287" type="checkbox" value="No">
+                          No - it does not enable reasonable adjustments to be made
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field288" type="checkbox" value="No">
+                          No - it has led to excessive requests for reasonable adjustments
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field289" type="checkbox" value="No">
+                          No - it does not lend itself to the authentication of learner evidence
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field290" type="checkbox" value="No">
+                          No – it appears there is a feature of the qualification, unit and/or assessment arrangements
+                          that indicate learners with a particular characteristic may be unfairly
+                          advantaged/disadvantaged
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field291" type="checkbox" value="No">
+                          No - the specified level of attainment in the specification could not be reached by the
+                          learners
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field292" type="checkbox" value="No">
+                          No - it does not allow assessors to differentiate accurately and consistently between a
+                          range of attainments by learners (e.g. centre staff had difficulty in understanding and
+                          applying what was required)
+                        </div>
+
+                        <div class="check2">
+                          <input name="section_seven_checkbox_field293" type="checkbox" value="No">
+                          No – there appears to be a material inconsistency between the level of demand of two or more
+                          optional tasks, assessments or units that may prejudice a group of learners taking/not
+                          taking the task, assessment or unit.
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="input-main">
+
+                      <div class="name">If any of the above were identified, then detail the action you have taken at
+                        the centre (e.g. any instruction you provided to the centre so as not to disadvantage any
+                        learners) and your recommendations for us to take forward with the qualification development
+                        team (e.g. we need to alter an assessment criterion and/or check the marks of all learners
+                        that may have taken a unit/assessment method that now may deemed unfair).
+                      </div>
+
+                      <div class="inpu">
+
+                        <textarea name="section_seven_textarea_field294" placeholder=""></textarea>
+
+                      </div>
+
+                    </div>
+
+                    <input name="fqp_centre_approval" class="btn btn-primary" type="submit" value="Submit">
+
+                    <div class="cls"></div>
+
+                  </div>
+
+                  <div class="cls"></div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
