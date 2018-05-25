@@ -264,3 +264,8 @@
     color: rgba(35, 35, 35, 0.8);
   }
 }
+
+.form__label--file #file-form-label {
+	overflow: hidden;
+	vertical-align: middle;
+}
